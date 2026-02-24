@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Environments
+.env
+.venv
+env/
+venv/
+.conda/
+
+# Data & results (large files)
+data/*.ndjson
+data/*.npz
+data/*.h5
+data/*.hdf5
+data/*.pkl
+data/*.pt
+data/*.pdb
+results/*.png
+results/*.mp4
+results/*.gif
+results/*.json
+localonly/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.DS_Store
+.vscode/settings.json
+*.swp
+*.swo
+.idea/
+
+# Test cache
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# MadGraph / external tool artifacts
+MG5_debug
+py.py

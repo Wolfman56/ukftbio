@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ukft_bio"
+version = "0.1.0"
+description = "Universal Knowledge Field Theory — Biology: Choice-Guided Simulation of Life"
+authors = [
+  { name = "Ted Vucurevich", email = "ted@example.com" },
+  { name = "Grok AI (xAI)" },
+  { name = "Claude (Anthropic)" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "plotly>=5.15.0",
+    "networkx>=3.0",
+    "biopython>=1.81",
+]
+
+[project.optional-dependencies]
+ml = [
+    "torch>=2.0.0",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+    "black",
+    "ruff",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Wolfman56/ukftbio"
+"Physics twin" = "https://github.com/Wolfman56/ukftphys"
