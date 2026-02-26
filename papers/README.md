@@ -1,6 +1,13 @@
 # Papers
 
 Theoretical papers produced by the ukftbio collaboration.
+Source of truth for all papers is `uktf/papers/`. Files here mirror that directory.
+
+## Published / Pre-print
+
+| # | File | Status | Summary |
+|---|------|--------|---------|
+| 41 | `41_Biological_Choice_Fields_UKFT_v1.0.md` | Pre-pub hypothesis | Fungal spike trains as UKFT choice operators; entangled-cluster formalism; 7 falsifiable predictions; mitochondrial/CMS Borda isomorphism |
 
 ## Planned
 
