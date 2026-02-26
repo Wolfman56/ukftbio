@@ -1,6 +1,6 @@
 # Biological Choice Fields: How Living Signaling Networks Instantiate UKFT Choice Operators
 
-**Paper 41 — UKFT Biology Series**  
+**Paper 01 — UKFT Biology Series** *(Cross-domain: uktf/papers/41)*  
 **Version:** 1.0 (Hypothesis / Prediction paper)  
 **Date:** February 2026  
 **Status:** Pre-publication hypothesis  

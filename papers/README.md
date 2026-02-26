@@ -7,7 +7,7 @@ Source of truth for all papers is `uktf/papers/`. Files here mirror that directo
 
 | # | File | Status | Summary |
 |---|------|--------|---------|
-| 41 | `41_Biological_Choice_Fields_UKFT_v1.0.md` | Pre-pub hypothesis | Fungal spike trains as UKFT choice operators; entangled-cluster formalism; 7 falsifiable predictions; mitochondrial/CMS Borda isomorphism |
+| 01 | `01_Biological_Choice_Fields_UKFT_v1.0.md` | Pre-pub hypothesis | Fungal spike trains as UKFT choice operators; entangled-cluster formalism; 7 falsifiable predictions; mitochondrial/CMS Borda isomorphism. Cross-domain mirror: `uktf/papers/41` |
 
 ## Planned
 
