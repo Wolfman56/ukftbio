@@ -35,9 +35,19 @@ Measurements:
 
 ## Figures
 
-- Fig 1: `exp05_cluster_resolution.png` -- PCA scatter of cluster feature
-  space; real-resolved / real-partial / shuffled; action minimum marked
-- Fig 2: `exp05_p2_correlation.png` -- correlation histogram with t-test
+**Fig 1: Cluster feature space (PCA) -- P3 action minimum bias**
+
+![exp05_cluster_resolution](../results/exp05_cluster_resolution.png)
+
+*4D cluster features (amp_mean, timing_tightness, correlation, std) projected onto first two PCA axes. Gold star = UKFT action minimum. Resolved clusters (blue circles) cluster near the action minimum; shuffled controls (red squares) do not. P3: t=-2.93, p=0.0036.*
+
+---
+
+**Fig 2: Inter-channel correlation histogram -- P2 test**
+
+![exp05_p2_correlation](../results/exp05_p2_correlation.png)
+
+*Distribution of Pearson r between channels for real entangled clusters vs shuffled controls. P2 is marginal on synthetic data (p=0.26); real Zenodo spike recordings expected to produce p<0.01 (Exp 06).*
 
 ## UKFT Interpretation
 

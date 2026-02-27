@@ -23,8 +23,19 @@ Measure: mean final rho_bio across surviving agents.
 
 ## Figures
 
-- Fig 1: `exp03_phase_diagram.png` -- mean final rho vs fidelity, f_c marked
-- Fig 2: `exp03_h_rep_landscape.png` -- H_rep(fidelity, L) nonlinear entropy cost
+**Fig 1: Error threshold phase diagram**
+
+![exp03_phase_diagram](../results/exp03_phase_diagram.png)
+
+*Mean final rho_bio vs replication fidelity across 22 levels x 5 trials x 50 agents. f_c marks the estimated critical fidelity (half-maximum crossing). The transition is sharp.*
+
+---
+
+**Fig 2: Replication entropy H_rep(fidelity, L)**
+
+![exp03_h_rep_landscape](../results/exp03_h_rep_landscape.png)
+
+*H_rep diverges as fidelity -> 0 and reaches zero at perfect fidelity. The intersection with the selection gradient determines f_c.*
 
 ## UKFT Interpretation
 

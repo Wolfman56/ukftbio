@@ -27,8 +27,19 @@ Both conditions start from the same random initial configuration.
 
 ## Figures
 
-- Fig 1: `exp02_folding_landscape.png` -- rho_fold vs step, both conditions
-- Fig 2: `exp02_action_landscape.png` -- S_bio surface (2D PCA of dihedral space)
+**Fig 1: UKFT vs Random folding trajectories**
+
+![exp02_folding_landscape](../results/exp02_folding_landscape.png)
+
+*rho_fold vs step for UKFT (least-action, 500 steps) vs random dihedral walk (5000 steps). UKFT converges; random walk does not.*
+
+---
+
+**Fig 2: S_bio action landscape (2D PCA slice of dihedral space)**
+
+![exp02_action_landscape](../results/exp02_action_landscape.png)
+
+*2000 random conformations projected onto first two PCA components, coloured by rho_fold. The high-rho basin (yellow) is the God Attractor target.*
 
 ## UKFT Interpretation
 

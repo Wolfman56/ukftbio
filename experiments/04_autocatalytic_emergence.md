@@ -27,8 +27,19 @@ Measure: fraction of runs reaching rho > 5.0 at step 200.
 
 ## Figures
 
-- Fig 1: `exp04_rho_emergence.png` -- rho trajectories at low / mid / high M
-- Fig 2: `exp04_god_basin_fraction.png` -- fraction reaching God basin vs M
+**Fig 1: rho_bio trajectories at three diversity levels**
+
+![exp04_rho_emergence](../results/exp04_rho_emergence.png)
+
+*rho_bio over 200 generations for low / mid / high initial diversity (sigma). Higher diversity -> higher asymptotic rho. Red dashed line = rho_death threshold.*
+
+---
+
+**Fig 2: Autocatalytic phase transition summary**
+
+![exp04_god_basin_fraction](../results/exp04_god_basin_fraction.png)
+
+*Left: mean final rho_bio vs initial diversity sigma (monotonically increasing). Right: population survival rate (all survive at f=0.95; lower fidelity will reveal the transition)*
 
 ## UKFT Interpretation
 
