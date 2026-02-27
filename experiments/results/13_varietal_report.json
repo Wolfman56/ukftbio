@@ -1,0 +1,124 @@
+{
+  "experiment": 13,
+  "title": "Multi-Species Varietal Comparison",
+  "species_processed": [
+    "pleurotus",
+    "schizophyllum"
+  ],
+  "dry_run": false,
+  "max_hours": null,
+  "hypotheses": {
+    "H13a_sparse_burst": {
+      "description": "silence>=0.40 AND (tail_ratio>=3.0 OR rs_zipf<-0.60) in all species",
+      "results": {
+        "pleurotus": {
+          "silence_fraction": 0.7102,
+          "heavy_tail_ratio": 3.0,
+          "rs_zipf": -0.9953,
+          "pass": true
+        },
+        "schizophyllum": {
+          "silence_fraction": 0.9845,
+          "heavy_tail_ratio": 174.2768,
+          "rs_zipf": -0.9816,
+          "pass": true
+        }
+      },
+      "gate_pass": true
+    },
+    "H13b_ks_distribution": {
+      "description": "KS test on \u03c1 CDFs across species pairs",
+      "results": {
+        "pleurotus_vs_schizophyllum": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        }
+      }
+    },
+    "H13c_geodesic_ratio": {
+      "description": "Geodesic/Euclidean ratio in [0.05, 0.80]",
+      "results": {
+        "pleurotus": {
+          "ratio_median": 0.343814,
+          "pass": true
+        },
+        "schizophyllum": {
+          "ratio_median": 0.345312,
+          "pass": true
+        }
+      },
+      "gate_pass": true
+    },
+    "H13d_centroid_distance": {
+      "description": "Centroid cosine distances (< 0.30 convergent, > 0.60 divergent)",
+      "distances": {
+        "pleurotus_vs_schizophyllum": 0.037068
+      },
+      "verdict": "CONVERGENT (max cosine dist = 0.0371 < 0.30)"
+    }
+  },
+  "per_species": {
+    "pleurotus": {
+      "name": "Pleurotus ostreatus",
+      "n_windows": 6507,
+      "rho": {
+        "median": 1.111111,
+        "mean": 1.532175,
+        "p95": 3.333333,
+        "p99": 3.333333,
+        "skewness": 0.6803,
+        "n_nonzero": 1886,
+        "n_total": 6507,
+        "silence_fraction": 0.7102,
+        "heavy_tail_ratio": 3.0,
+        "rs_zipf": -0.9953,
+        "burst_fraction": 0.2119
+      },
+      "geodesic": {
+        "ratio_median": 0.343814,
+        "ratio_p95": 0.369537,
+        "n_pairs": 42115
+      }
+    },
+    "schizophyllum": {
+      "name": "Schizophyllum commune",
+      "n_windows": 2196,
+      "rho": {
+        "median": 0.002869,
+        "mean": 0.166752,
+        "p95": 0.5,
+        "p99": 0.5,
+        "skewness": 0.768,
+        "n_nonzero": 34,
+        "n_total": 2196,
+        "silence_fraction": 0.9845,
+        "heavy_tail_ratio": 174.2768,
+        "rs_zipf": -0.9816,
+        "burst_fraction": 0.0137
+      },
+      "geodesic": {
+        "ratio_median": 0.345312,
+        "ratio_p95": 0.357854,
+        "n_pairs": 2377
+      }
+    }
+  },
+  "cross_comparisons": [
+    {
+      "pair": "pleurotus_vs_schizophyllum",
+      "species_a": "Pleurotus ostreatus",
+      "species_b": "Schizophyllum commune",
+      "ks_rho": {
+        "ks_stat": 0.8356,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.037068
+    }
+  ],
+  "gates": {
+    "GATE_H13a": true,
+    "GATE_H13c": true,
+    "n_species": 2
+  }
+}
