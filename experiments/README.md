@@ -120,14 +120,14 @@ the σ metric (rewarding low variance) will be addressed in Phase 3.
 
 ---
 
-## Phase 3 — JEPA + Swarm (Exp 11–15) ⏳ Planned
+## Phase 3 — JEPA + Swarm (Exp 11–15)  🔄 In Progress
 
 Next phase targets real data (Adamatzky Zenodo fungal spike trains) and multi-agent
 swarm dynamics.
 
 | Exp | Title | Description |
 |-----|-------|-------------|
-| 11 | Real Fungal Data Ingest | Adamatzky Zenodo dataset — baseline stats vs synthetic |
+| 11 | Real Fungal Data Ingest ✅ | Adamatzky Star_Lab03 (217h, 8ch): 2,534 spikes 85.8% burst, 6,507 windows 29% active, ρ_median=1.111, geodesic/Euc=0.183, time-dilation r=+0.392, recall@50=0.80 PASS |
 | 12 | JEPA Predictor (real data) | Full JEPA epistemic sampling on real spike trains |
 | 13 | Swarm Choice Coupling | Multi-channel collective choice branching |
 | 14 | Duroxide Orchestration | Durable-execution replay of fungal experiment |
