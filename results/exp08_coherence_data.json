@@ -1,0 +1,33 @@
+{
+  "experiment": "08_biophoton_coherence",
+  "phi": 1.618034,
+  "oscillation_periods_s": {
+    "omega_1": 600.0,
+    "phi_omega_1": 370.82,
+    "phi2_omega_1": 229.18
+  },
+  "entropy": {
+    "s_coact": 1.917027,
+    "s_coherent": 0.0,
+    "s_combined": 1.917027,
+    "t1_supported": true,
+    "best_alpha": 0.0
+  },
+  "geodesics": {
+    "pl_coact": 6.9637,
+    "pl_coherent": Infinity,
+    "pl_combined": 13.9274,
+    "t2_supported": false
+  },
+  "coherence": {
+    "mean_plv": 0.1468,
+    "edges_above_threshold": 0,
+    "threshold": 0.35
+  },
+  "phi_ratio_test": {
+    "n_ratios": 268,
+    "near_phi": 65,
+    "near_phi2": 39,
+    "t3_supported": true
+  }
+}
