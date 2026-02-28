@@ -1,0 +1,111 @@
+{
+  "species": [
+    "Pleurotus",
+    "Schizophyllum",
+    "Cordyceps",
+    "Enoki",
+    "Omphalotus"
+  ],
+  "cv_tiers": {
+    "bursty": [
+      "Pleurotus",
+      "Schizophyllum"
+    ],
+    "smooth": [
+      "Cordyceps",
+      "Enoki",
+      "Omphalotus"
+    ]
+  },
+  "native_S": {
+    "Pleurotus": 0.654116,
+    "Schizophyllum": 0.063875,
+    "Cordyceps": 0.159537,
+    "Enoki": 0.401504,
+    "Omphalotus": 0.319014
+  },
+  "eta_matrix": {
+    "Pleurotus": {
+      "Pleurotus": null,
+      "Schizophyllum": 0.286604,
+      "Cordyceps": 0.549541,
+      "Enoki": 0.336759,
+      "Omphalotus": 0.507599
+    },
+    "Schizophyllum": {
+      "Pleurotus": 0.592006,
+      "Schizophyllum": null,
+      "Cordyceps": 0.349974,
+      "Enoki": 0.355467,
+      "Omphalotus": 0.489487
+    },
+    "Cordyceps": {
+      "Pleurotus": 0.639653,
+      "Schizophyllum": 0.499191,
+      "Cordyceps": null,
+      "Enoki": 0.373742,
+      "Omphalotus": 0.726256
+    },
+    "Enoki": {
+      "Pleurotus": 0.540527,
+      "Schizophyllum": 0.237921,
+      "Cordyceps": 0.369985,
+      "Enoki": null,
+      "Omphalotus": 0.432021
+    },
+    "Omphalotus": {
+      "Pleurotus": 0.632029,
+      "Schizophyllum": 0.528644,
+      "Cordyceps": 0.790446,
+      "Enoki": 0.391222,
+      "Omphalotus": null
+    }
+  },
+  "top5_pairs": [
+    {
+      "source": "Omphalotus",
+      "target": "Cordyceps",
+      "eta": 0.790446
+    },
+    {
+      "source": "Cordyceps",
+      "target": "Omphalotus",
+      "eta": 0.726256
+    },
+    {
+      "source": "Cordyceps",
+      "target": "Pleurotus",
+      "eta": 0.639653
+    },
+    {
+      "source": "Omphalotus",
+      "target": "Pleurotus",
+      "eta": 0.632029
+    },
+    {
+      "source": "Schizophyllum",
+      "target": "Pleurotus",
+      "eta": 0.592006
+    }
+  ],
+  "hypotheses": {
+    "H19a": {
+      "result": "not_confirmed",
+      "mw_p": 0.425316,
+      "intra_median": 0.4116,
+      "cross_median": 0.5034
+    },
+    "H19b": {
+      "result": "confirmed",
+      "rs_cv": 0.1874,
+      "rs_ar1": -0.1691,
+      "p_cv": 0.4289,
+      "p_ar1": 0.4761
+    },
+    "H19c": {
+      "result": "not_confirmed",
+      "top_pair": "Omphalotus\u2192Cordyceps",
+      "top_eta": 0.7904
+    }
+  }
+}
