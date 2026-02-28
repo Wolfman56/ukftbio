@@ -17,18 +17,14 @@ env/
 venv/
 .conda/
 
-# Data & results (large files)
-data/*.ndjson
-data/*.npz
-data/*.h5
-data/*.hdf5
-data/*.pkl
-data/*.pt
-data/*.pdb
-results/*.png
-results/*.mp4
-results/*.gif
-results/*.json
+# Intermediate experiment data (large generated files — not for tracking)
+experiments/data/*.ndjson
+experiments/data/*.npz
+experiments/data/*.h5
+experiments/data/*.hdf5
+experiments/data/*.pkl
+experiments/data/*.pt
+experiments/data/*.pdb
 localonly/
 
 # Jupyter

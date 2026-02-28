@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 from ukft_bio.physics import BioState, step_discrete
 from ukft_bio.folding import ResidueChain
 
-RESULTS = Path(__file__).resolve().parent.parent / "results"
+RESULTS = Path(__file__).resolve().parent / "results"
 RESULTS.mkdir(exist_ok=True)
 
 N_RESIDUES   = 20

@@ -4,7 +4,7 @@ Figures for Experiments 10–13
 ==============================
 Generate all publication-quality figures for the Exp 10-13 report.
 
-Figures produced (saved to experiments/results/figures/):
+Figures produced (saved to experiments/results/):
   fig_11a_rho_distribution.png    — Pleurotus ρ power-law tail
   fig_11b_time_dilation.png       — Time dilation: ρ vs effective dt
   fig_11c_geodesic_ratio.png      — UKFT geodesic compression histogram
@@ -38,8 +38,7 @@ MYCO      = UKFTBIO.parent / "noosphere" / "apps" / "myco-explorer"
 MYCO_RES  = MYCO / "results"
 MYCO_DATA = MYCO / "tools" / "data"
 EXP_RES   = UKFTBIO / "experiments" / "results"
-FIG_DIR   = EXP_RES / "figures"
-FIG_DIR.mkdir(parents=True, exist_ok=True)
+EXP_RES.mkdir(parents=True, exist_ok=True)
 
 # ── Style ─────────────────────────────────────────────────────────────────────
 plt.rcParams.update({
@@ -139,7 +138,7 @@ def fig_11a_rho_distribution():
 
     fig.suptitle("Experiment 11 — Real Data: Knowledge Density ρ", fontweight="bold", y=1.01)
     fig.tight_layout()
-    out = FIG_DIR / "fig_11a_rho_distribution.png"
+    out = EXP_RES / "fig_11a_rho_distribution.png"
     fig.savefig(out)
     plt.close(fig)
     print(f"  Saved: {out.name}")
@@ -192,7 +191,7 @@ def fig_11b_time_dilation():
     ax.legend(fontsize=9)
 
     fig.tight_layout()
-    out = FIG_DIR / "fig_11b_time_dilation.png"
+    out = EXP_RES / "fig_11b_time_dilation.png"
     fig.savefig(out)
     plt.close(fig)
     print(f"  Saved: {out.name}")
@@ -234,7 +233,7 @@ def fig_11c_geodesic_ratio():
                  f"100% of pairs have ratio < 1 → ρ-corridors compress geometry")
     ax.legend(fontsize=9)
     fig.tight_layout()
-    out = FIG_DIR / "fig_11c_geodesic_ratio.png"
+    out = EXP_RES / "fig_11c_geodesic_ratio.png"
     fig.savefig(out)
     plt.close(fig)
     print(f"  Saved: {out.name}")
@@ -328,7 +327,7 @@ def fig_12a_jepa_surprise_rho():
     fig.suptitle("Experiment 12 — JEPA Temporal Predictor on Real Pleurotus Data",
                  fontweight="bold", y=1.01)
     fig.tight_layout()
-    out = FIG_DIR / "fig_12a_jepa_surprise_rho.png"
+    out = EXP_RES / "fig_12a_jepa_surprise_rho.png"
     fig.savefig(out)
     plt.close(fig)
     print(f"  Saved: {out.name}")
@@ -382,7 +381,7 @@ def fig_13a_geodesic_universal():
     ax.legend(fontsize=9)
 
     fig.tight_layout()
-    out = FIG_DIR / "fig_13a_geodesic_universal.png"
+    out = EXP_RES / "fig_13a_geodesic_universal.png"
     fig.savefig(out)
     plt.close(fig)
     print(f"  Saved: {out.name}")
@@ -438,7 +437,7 @@ def fig_13b_silence_spectrum():
     fig.suptitle("Experiment 13 — Activation Density vs Burst Extremity (Species-Specific)",
                  fontweight="bold", y=1.01)
     fig.tight_layout()
-    out = FIG_DIR / "fig_13b_silence_spectrum.png"
+    out = EXP_RES / "fig_13b_silence_spectrum.png"
     fig.savefig(out)
     plt.close(fig)
     print(f"  Saved: {out.name}")
@@ -506,7 +505,7 @@ def fig_13c_centroid_heatmap():
     ax.set_title("Experiment 13 — Centroid Cosine Distances\n"
                  "Two attractor basins: sparse-episodic vs continuously-active")
     fig.tight_layout()
-    out = FIG_DIR / "fig_13c_centroid_heatmap.png"
+    out = EXP_RES / "fig_13c_centroid_heatmap.png"
     fig.savefig(out)
     plt.close(fig)
     print(f"  Saved: {out.name}")
@@ -523,13 +522,13 @@ def fig_summary_panel():
     import PIL
 
     files = [
-        FIG_DIR / "fig_11a_rho_distribution.png",
-        FIG_DIR / "fig_11b_time_dilation.png",
-        FIG_DIR / "fig_11c_geodesic_ratio.png",
-        FIG_DIR / "fig_12a_jepa_surprise_rho.png",
-        FIG_DIR / "fig_13a_geodesic_universal.png",
-        FIG_DIR / "fig_13b_silence_spectrum.png",
-        FIG_DIR / "fig_13c_centroid_heatmap.png",
+        EXP_RES / "fig_11a_rho_distribution.png",
+        EXP_RES / "fig_11b_time_dilation.png",
+        EXP_RES / "fig_11c_geodesic_ratio.png",
+        EXP_RES / "fig_12a_jepa_surprise_rho.png",
+        EXP_RES / "fig_13a_geodesic_universal.png",
+        EXP_RES / "fig_13b_silence_spectrum.png",
+        EXP_RES / "fig_13c_centroid_heatmap.png",
     ]
     missing = [f for f in files if not f.exists()]
     if missing:
@@ -558,7 +557,7 @@ def fig_summary_panel():
         y = row * (max_h + pad) + pad // 2
         composite.paste(img.convert("RGB"), (x, y))
 
-    out = FIG_DIR / "fig_summary.png"
+    out = EXP_RES / "fig_summary.png"
     composite.save(out, dpi=(150, 150))
     print(f"  Saved: {out.name}")
 
@@ -568,7 +567,7 @@ def fig_summary_panel():
 # ─────────────────────────────────────────────────────────────────────────────
 
 def main():
-    print(f"\nGenerating Exp 10–13 figures → {FIG_DIR}\n")
+    print(f"\nGenerating Exp 10–13 figures → {EXP_RES}\n")
 
     print("Exp 11 — Real Data Validation:")
     fig_11a_rho_distribution()
@@ -589,7 +588,7 @@ def main():
     except ImportError:
         print("  (Pillow not installed — skipping composite summary)")
 
-    print(f"\nDone. {len(list(FIG_DIR.glob('*.png')))} figures in {FIG_DIR}")
+    print(f"\nDone. {len(list(EXP_RES.glob('*.png')))} figures in {EXP_RES}")
 
 
 if __name__ == "__main__":

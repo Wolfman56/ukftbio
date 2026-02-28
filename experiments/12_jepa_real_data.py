@@ -71,10 +71,12 @@ ALIGNED_NDJSON = DATA_DIR / "pleurotus_spike_aligned.ndjson"
 BORDA_JSON = RESULTS_DIR / "borda_rankings.json"
 FMM_JSON = RESULTS_DIR / "fmm_scores.json"
 
-OUT_DIR = REPO_ROOT / "experiments" / "results"
+OUT_DIR  = REPO_ROOT / "experiments" / "results"
+DATA_OUT = REPO_ROOT / "experiments" / "data"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-OUT_REPORT = OUT_DIR / "12_jepa_report.json"
-OUT_SURPRISE = OUT_DIR / "12_jepa_surprise_scores.ndjson"
+DATA_OUT.mkdir(parents=True, exist_ok=True)
+OUT_REPORT   = OUT_DIR  / "12_jepa_report.json"
+OUT_SURPRISE = DATA_OUT / "12_jepa_surprise_scores.ndjson"
 
 # ── Hyperparameters ──────────────────────────────────────────────────────────
 HIDDEN_DIM = 64

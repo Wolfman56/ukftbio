@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 from ukft_bio.physics import replication_entropy
 from ukft_bio.evolution import EvolutionaryDynamics
 
-RESULTS = Path(__file__).resolve().parent.parent / "results"
+RESULTS = Path(__file__).resolve().parent / "results"
 RESULTS.mkdir(exist_ok=True)
 
 FIDELITIES = np.linspace(0.70, 0.995, 22)

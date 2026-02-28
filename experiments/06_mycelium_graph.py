@@ -34,7 +34,7 @@ import matplotlib.colors as mcolors
 import networkx as nx
 from scipy import stats
 
-RESULTS = Path(__file__).resolve().parent.parent / "results"
+RESULTS = Path(__file__).resolve().parent / "results"
 RESULTS.mkdir(exist_ok=True)
 
 # Real data path (noosphere myco-explorer pipeline output)

@@ -56,7 +56,7 @@ from scipy.stats import entropy as scipy_entropy
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
-RESULTS = Path(__file__).resolve().parent.parent / "results"
+RESULTS = Path(__file__).resolve().parent / "results"
 RESULTS.mkdir(exist_ok=True)
 
 EXP06_GRAPH  = RESULTS / "exp06_graph.json"

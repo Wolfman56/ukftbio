@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 from ukft_bio.evolution import EvolutionaryDynamics, Replicator
 from ukft_bio.physics import BioState
 
-RESULTS = Path(__file__).resolve().parent.parent / "results"
+RESULTS = Path(__file__).resolve().parent / "results"
 RESULTS.mkdir(exist_ok=True)
 
 # Diversity levels: sigma of initial rho distribution (low=0.1, high=3.0)

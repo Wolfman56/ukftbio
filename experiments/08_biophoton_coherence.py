@@ -56,7 +56,7 @@ import networkx as nx
 from scipy import signal, stats
 from scipy.stats import entropy as scipy_entropy
 
-RESULTS = Path(__file__).resolve().parent.parent / "results"
+RESULTS = Path(__file__).resolve().parent / "results"
 RESULTS.mkdir(exist_ok=True)
 
 EXP06_GRAPH  = RESULTS / "exp06_graph.json"

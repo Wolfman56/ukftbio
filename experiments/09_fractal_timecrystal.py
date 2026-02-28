@@ -59,7 +59,7 @@ import matplotlib.pyplot as plt
 from scipy import signal, stats
 from scipy.optimize import curve_fit
 
-RESULTS = Path(__file__).resolve().parent.parent / "results"
+RESULTS = Path(__file__).resolve().parent / "results"
 RESULTS.mkdir(exist_ok=True)
 
 EXP06_GRAPH = RESULTS / "exp06_graph.json"
