@@ -39,6 +39,20 @@ All three hypotheses pass. This is the synthetic upper bound — real data shoul
 
 ## Outputs
 
+![40D embeddings projected to 2D via PCA](results/exp10_embedding_pca.png)
+
+![FMM wavefront deviation score per node](results/exp10_fmm_scores.png)
+
+![Borda rank table and bar chart](results/exp10_borda_ranking.png)
+
+![Injected anomaly detection validation](results/exp10_anomaly_detection.png)
+
+![UKFT vs Dijkstra geodesic paths](results/exp10_geodesic_validation.png)
+
+![CWT peak frequency ratio test](results/exp10_cwt_phi_ratio.png)
+
+![Consciousness staircase — Exp 06–10 metrics per channel](results/exp10_consciousness_staircase.png)
+
 | File | Description |
 |------|-------------|
 | `results/exp10_embedding_pca.png` | 40D embeddings in 2D (PCA) |

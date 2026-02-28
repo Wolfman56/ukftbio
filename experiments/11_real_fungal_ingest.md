@@ -53,6 +53,16 @@ borda_rank           → Borda fusion S1+S3
 
 ## Outputs
 
+![Exp 10 synthetic vs Exp 11 real pipeline comparison](results/exp11_pipeline_comparison.png)
+
+![ρ distribution with Zipf fit](results/exp11_rho_distribution.png)
+
+![Time dilation — Spearman scatter ρ vs ISI](results/exp11_time_dilation.png)
+
+![Geodesic/Euclidean ratio distribution](results/exp11_geodesic_ratio.png)
+
+![Top-10 Borda candidates timeline](results/exp11_borda_topk.png)
+
 | File | Description |
 |------|-------------|
 | `results/exp11_summary.json` | All canonical numbers |

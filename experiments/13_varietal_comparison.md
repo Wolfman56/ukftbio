@@ -59,6 +59,12 @@ A single Pleurotus-trained projection head transfers without re-training to four
 
 ## Outputs
 
+![Geodesic ratio — 5 species with universality band](results/fig_13a_geodesic_universal.png)
+
+![Silence spectrum and heavy-tail ratios per species](results/fig_13b_silence_spectrum.png)
+
+![Cross-species cosine distance matrix](results/fig_13c_centroid_heatmap.png)
+
 | File | Description |
 |------|-------------|
 | `results/13_varietal_report.json` | Full per-species metrics + hypothesis gates |

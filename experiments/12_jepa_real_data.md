@@ -59,6 +59,8 @@ rs(S, ρ) = +0.88 between a retrospective and a prospective statistic can only a
 
 ## Outputs
 
+![JEPA surprise vs ρ scatter and correlation bar chart](results/fig_12a_jepa_surprise_rho.png)
+
 | File | Description |
 |------|-------------|
 | `results/12_jepa_report.json` | All H12a–H12d values |
