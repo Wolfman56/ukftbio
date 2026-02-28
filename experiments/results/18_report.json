@@ -1,0 +1,345 @@
+{
+  "runs": {
+    "Schizophyllum_run1": {
+      "n_windows": 439,
+      "top_k": [
+        {
+          "window_idx": 140,
+          "borda": 0.990137,
+          "s1": 0.0,
+          "s2": 0.582674,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 141,
+          "borda": 0.986393,
+          "s1": 0.0,
+          "s2": 0.357103,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 139,
+          "borda": 0.970868,
+          "s1": 0.0,
+          "s2": 0.053519,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 138,
+          "borda": 0.961461,
+          "s1": 0.0,
+          "s2": 0.03237,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 146,
+          "borda": 0.958174,
+          "s1": 0.0,
+          "s2": 0.056385,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 143,
+          "borda": 0.94895,
+          "s1": 0.0,
+          "s2": 0.029656,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 150,
+          "borda": 0.947854,
+          "s1": 0.0,
+          "s2": 0.049713,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 163,
+          "borda": 0.94758,
+          "s1": 0.0,
+          "s2": 0.053499,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 149,
+          "borda": 0.942557,
+          "s1": 0.0,
+          "s2": 0.009771,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 142,
+          "borda": 0.942466,
+          "s1": 0.0,
+          "s2": 0.019178,
+          "s3": 1.0
+        }
+      ],
+      "timings": {
+        "Ingest": {
+          "elapsed_ms": 90.27154091745615,
+          "replayed": false,
+          "orig_ms": 90.27154091745615
+        },
+        "DetectSpikes": {
+          "elapsed_ms": 116.7331668548286,
+          "replayed": false,
+          "orig_ms": 116.7331668548286
+        },
+        "BuildEmbeddings": {
+          "elapsed_ms": 138.90458270907402,
+          "replayed": false,
+          "orig_ms": 138.90458270907402
+        },
+        "FmmScore": {
+          "elapsed_ms": 25.6029162555933,
+          "replayed": false,
+          "orig_ms": 25.6029162555933
+        },
+        "JepaScore": {
+          "elapsed_ms": 751.0179579257965,
+          "replayed": false,
+          "orig_ms": 751.0179579257965
+        },
+        "CentroidS3": {
+          "elapsed_ms": 4.052291624248028,
+          "replayed": false,
+          "orig_ms": 4.052291624248028
+        },
+        "BordaFuse": {
+          "elapsed_ms": 0.19499985501170158,
+          "replayed": false,
+          "orig_ms": 0.19499985501170158
+        }
+      },
+      "total_ms": 1126.7774561420083
+    },
+    "Schizophyllum_run2_replay": {
+      "n_windows": 439,
+      "top_k": [
+        {
+          "window_idx": 140,
+          "borda": 0.990137,
+          "s1": 0.0,
+          "s2": 0.582674,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 141,
+          "borda": 0.986393,
+          "s1": 0.0,
+          "s2": 0.357103,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 139,
+          "borda": 0.970868,
+          "s1": 0.0,
+          "s2": 0.053519,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 138,
+          "borda": 0.961461,
+          "s1": 0.0,
+          "s2": 0.03237,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 146,
+          "borda": 0.958174,
+          "s1": 0.0,
+          "s2": 0.056385,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 143,
+          "borda": 0.94895,
+          "s1": 0.0,
+          "s2": 0.029656,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 150,
+          "borda": 0.947854,
+          "s1": 0.0,
+          "s2": 0.049713,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 163,
+          "borda": 0.94758,
+          "s1": 0.0,
+          "s2": 0.053499,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 149,
+          "borda": 0.942557,
+          "s1": 0.0,
+          "s2": 0.009771,
+          "s3": 1.0
+        },
+        {
+          "window_idx": 142,
+          "borda": 0.942466,
+          "s1": 0.0,
+          "s2": 0.019178,
+          "s3": 1.0
+        }
+      ],
+      "timings": {
+        "Ingest": {
+          "elapsed_ms": 8.288770914077759e-05,
+          "replayed": true,
+          "orig_ms": 90.27154091745615
+        },
+        "DetectSpikes": {
+          "elapsed_ms": 8.288770914077759e-05,
+          "replayed": true,
+          "orig_ms": 116.7331668548286
+        },
+        "BuildEmbeddings": {
+          "elapsed_ms": 4.190951585769653e-05,
+          "replayed": true,
+          "orig_ms": 138.90458270907402
+        },
+        "FmmScore": {
+          "elapsed_ms": 8.288770914077759e-05,
+          "replayed": true,
+          "orig_ms": 25.6029162555933
+        },
+        "JepaScore": {
+          "elapsed_ms": 4.190951585769653e-05,
+          "replayed": true,
+          "orig_ms": 751.0179579257965
+        },
+        "CentroidS3": {
+          "elapsed_ms": 8.288770914077759e-05,
+          "replayed": true,
+          "orig_ms": 4.052291624248028
+        },
+        "BordaFuse": {
+          "elapsed_ms": 8.288770914077759e-05,
+          "replayed": true,
+          "orig_ms": 0.19499985501170158
+        }
+      },
+      "total_ms": 0.000498257577419281
+    },
+    "Cordyceps_run1": {
+      "n_windows": 3166,
+      "top_k": [
+        {
+          "window_idx": 2352,
+          "borda": 0.862092,
+          "s1": 0.350336,
+          "s2": 1.301426,
+          "s3": 0.644683
+        },
+        {
+          "window_idx": 2890,
+          "borda": 0.859172,
+          "s1": 0.950735,
+          "s2": 0.694397,
+          "s3": 0.61374
+        },
+        {
+          "window_idx": 2124,
+          "borda": 0.854572,
+          "s1": 0.598327,
+          "s2": 0.848142,
+          "s3": 0.554043
+        },
+        {
+          "window_idx": 2659,
+          "borda": 0.851185,
+          "s1": 0.572455,
+          "s2": 0.681045,
+          "s3": 0.549979
+        },
+        {
+          "window_idx": 2257,
+          "borda": 0.849706,
+          "s1": 0.399865,
+          "s2": 1.08386,
+          "s3": 0.521617
+        },
+        {
+          "window_idx": 2226,
+          "borda": 0.849024,
+          "s1": 0.572455,
+          "s2": 0.489362,
+          "s3": 0.549979
+        },
+        {
+          "window_idx": 2660,
+          "borda": 0.846913,
+          "s1": 0.35542,
+          "s2": 0.22686,
+          "s3": 0.636337
+        },
+        {
+          "window_idx": 2764,
+          "borda": 0.846433,
+          "s1": 0.359088,
+          "s2": 0.681279,
+          "s3": 0.518674
+        },
+        {
+          "window_idx": 2302,
+          "borda": 0.844474,
+          "s1": 1.0,
+          "s2": 1.128323,
+          "s3": 0.475533
+        },
+        {
+          "window_idx": 2602,
+          "borda": 0.843893,
+          "s1": 0.0,
+          "s2": 1.109542,
+          "s3": 1.0
+        }
+      ],
+      "timings": {
+        "Ingest": {
+          "elapsed_ms": 738.2695837877691,
+          "replayed": false,
+          "orig_ms": 738.2695837877691
+        },
+        "DetectSpikes": {
+          "elapsed_ms": 903.2005411572754,
+          "replayed": false,
+          "orig_ms": 903.2005411572754
+        },
+        "BuildEmbeddings": {
+          "elapsed_ms": 1483.069833368063,
+          "replayed": false,
+          "orig_ms": 1483.069833368063
+        },
+        "FmmScore": {
+          "elapsed_ms": 361.4656669087708,
+          "replayed": false,
+          "orig_ms": 361.4656669087708
+        },
+        "JepaScore": {
+          "elapsed_ms": 4952.842082828283,
+          "replayed": false,
+          "orig_ms": 4952.842082828283
+        },
+        "CentroidS3": {
+          "elapsed_ms": 6.446166895329952,
+          "replayed": false,
+          "orig_ms": 6.446166895329952
+        },
+        "BordaFuse": {
+          "elapsed_ms": 1.6283337026834488,
+          "replayed": false,
+          "orig_ms": 1.6283337026834488
+        }
+      },
+      "total_ms": 8446.922208648175
+    }
+  },
+  "replay_speedup_x": 112677.7,
+  "replay_determinism": "PASS"
+}
