@@ -186,13 +186,64 @@ universal; activation density = biological.
 
 ---
 
-## Phase 4 — Next Steps (Exp 14+)  📋 Planned
+## Phase 4 — Sub-Threshold Communication (Exp 14+)
+
+### Exp 14 — Two-Tier Communication: Local vs Global Signal Tiers  ✅ Complete
+
+Prior experiments treated sub-threshold activity (|v_detrended| < 0.5 mV) as noise.
+Exp 14 tests whether it is a second, lower-bandwidth communication tier: the pilot
+wave / guidance field that precedes choice collapse.
+
+| Exp | Title | Key Result | Status |
+|-----|-------|-----------|--------|
+| 14 | Two-Tier Communication | Schizophyllum ratio=**69.6×** local-dominant; Omphalotus=**0.003×** global-dominant; all species Zipf-like local density — *Epiphany 11: the silence IS the signal* | ✅ |
+
+### Running Phase 4
+
+    conda activate ukftbio
+    python experiments/14_local_global_tiers.py
+
+### Phase 4 Key Numbers
+
+| Metric | Value | Experiment |
+|--------|-------|-----------|
+| Schizophyllum ρ_local / ρ_global | **69.6×** | Exp 14 |
+| Cordyceps ρ_local / ρ_global | **16.6×** | Exp 14 |
+| Enoki ρ_local / ρ_global | **0.25×** | Exp 14 |
+| Omphalotus ρ_local / ρ_global | **0.003×** | Exp 14 |
+| Schizophyllum global spatial coherence | mean\|r\| = **0.999** | Exp 14 |
+| Omphalotus global spatial coherence | mean\|r\| = **0.000** | Exp 14 |
+| Omphalotus local spatial coherence | mean\|r\| = **0.323** | Exp 14 |
+| Zipf-like local density | **4 / 4 species** confirmed | Exp 14 |
+| Omphalotus local-leads-global lag | **+28 windows (280 min)** | Exp 14 |
+
+### Phase 4 Canonical Figures
+
+| Exp | Figure | What it shows |
+|-----|--------|--------------|
+| 14 | `14_tier_distribution.png` | Noise / local / global fractions × 4 species (stacked bar) |
+| 14 | `14_ratio_per_species.png` | ρ_local / ρ_global ratio per species |
+| 14 | `14_crosscorr_lag.png` | Cross-correlation panels — local vs global temporal lead/lag |
+| 14 | `14_spatial_topology.png` | 2×4 spatial correlation matrices — topology inversion |
+
+### Epiphanies
+
+**Epiphany 11** (Exp 14): Schizophyllum's "silence" is not dormancy — the network
+operates predominantly in the sub-threshold local tier (69.6× more local events
+than global). When it fires globally, ALL channels agree with near-perfect
+synchrony (|r| = 0.999): a unanimous choice collapse after long pilot-wave
+build-up. Omphalotus does the opposite: constant independent channel broadcasts
+(global |r| = 0.000) with coordination only in the sub-threshold residual.
+These are two distinct strategies for solving the collective decision problem,
+not two points on an activity continuum.
+
+### Next Planned (Exp 15+)
 
 | Exp | Title | Description |
 |-----|-------|-------------|
-| 14 | Cross-Species JEPA Transfer | Train JEPA on Pleurotus, score on all 5 species — does temporal structure transfer? |
-| 15 | Cross-Species Anomaly Scan | HEP-explorer blind scan across all 5 species jointly — find inter-species geometric analogues |
-| 16 | Duroxide Orchestration | Durable-execution replay for reproducible fungal pipelines |
+| 15 | Cross-Species JEPA Transfer | Train JEPA on Pleurotus, score on all 5 species — does temporal structure transfer? |
+| 16 | Cross-Species Anomaly Scan | HEP-explorer blind scan across all 5 species jointly |
+| 17 | Duroxide Orchestration | Durable-execution replay for reproducible fungal pipelines |
 
 ---
 

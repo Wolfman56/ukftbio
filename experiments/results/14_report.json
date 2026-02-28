@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Schizophyllum",
+    "n_samples": 263959,
+    "n_channels": 7,
+    "sigma_noise_mean": 0.01978750340640545,
+    "fractions": {
+      "noise": 0.9203896925550668,
+      "local": 0.07848350907310822,
+      "global": 0.0011267983718250617
+    },
+    "rho_local_mean": 0.07856708970604187,
+    "rho_global_mean": 0.0011291897168890334,
+    "ratio_local_global": 69.57829010566763,
+    "xcorr_peak_lag": -1,
+    "xcorr_peak_val": 0.21482938953040867,
+    "mean_conn_local": 0.48255423690640803,
+    "mean_conn_global": 0.9988979010615964,
+    "powerlaw_local": {
+      "slope": -1.2269564336068899,
+      "r2": 0.7386568790319408
+    },
+    "powerlaw_global": {
+      "slope": 0.0,
+      "r2": 0.0
+    }
+  },
+  {
+    "name": "Cordyceps",
+    "n_samples": 1900055,
+    "n_channels": 10,
+    "sigma_noise_mean": 0.1060250774025917,
+    "fractions": {
+      "noise": 0.7229785979879529,
+      "local": 0.27288794271744765,
+      "global": 0.01642062992913363
+    },
+    "rho_local_mean": 0.27289513581806696,
+    "rho_global_mean": 0.016421930932827962,
+    "ratio_local_global": 16.61772521966591,
+    "xcorr_peak_lag": 0,
+    "xcorr_peak_val": 0.6083013786148863,
+    "mean_conn_local": 0.07270039735916282,
+    "mean_conn_global": 0.06604390114687884,
+    "powerlaw_local": {
+      "slope": -5.23375330956781,
+      "r2": 0.5109442063300191
+    },
+    "powerlaw_global": {
+      "slope": -1.8983671183082718,
+      "r2": 0.7679726671875716
+    }
+  },
+  {
+    "name": "Enoki",
+    "n_samples": 1078296,
+    "n_channels": 7,
+    "sigma_noise_mean": 0.43448612093925476,
+    "fractions": {
+      "noise": 0.9608824611105988,
+      "local": 0.03219166430844857,
+      "global": 0.13049239593898945
+    },
+    "rho_local_mean": 0.03219267562339349,
+    "rho_global_mean": 0.13049103002358428,
+    "ratio_local_global": 0.2467041268474557,
+    "xcorr_peak_lag": 0,
+    "xcorr_peak_val": 0.2425898862701516,
+    "mean_conn_local": 0.019669672439434516,
+    "mean_conn_global": 0.06371557539223056,
+    "powerlaw_local": {
+      "slope": -1.2106899137936828,
+      "r2": 0.6897940387603986
+    },
+    "powerlaw_global": {
+      "slope": -6.260297732910836,
+      "r2": 0.7646207276378252
+    }
+  },
+  {
+    "name": "Omphalotus",
+    "n_samples": 3279446,
+    "n_channels": 7,
+    "sigma_noise_mean": 0.14096544682979584,
+    "fractions": {
+      "noise": 0.999704131211709,
+      "local": 0.0002957381041972159,
+      "global": 0.0873881050118134
+    },
+    "rho_local_mean": 0.0002957783296301137,
+    "rho_global_mean": 0.08738848952206683,
+    "ratio_local_global": 0.0033846371672945036,
+    "xcorr_peak_lag": 28,
+    "xcorr_peak_val": 0.07609867798361954,
+    "mean_conn_local": 0.3225143487119649,
+    "mean_conn_global": 0.000281981728119825,
+    "powerlaw_local": {
+      "slope": -1.6559297592969537,
+      "r2": 0.6737546472312277
+    },
+    "powerlaw_global": {
+      "slope": 1.6292502426709028,
+      "r2": 0.010588700599034993
+    }
+  }
+]
