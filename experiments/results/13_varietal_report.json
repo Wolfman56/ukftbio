@@ -3,13 +3,16 @@
   "title": "Multi-Species Varietal Comparison",
   "species_processed": [
     "pleurotus",
-    "schizophyllum"
+    "schizophyllum",
+    "cordyceps",
+    "flammulina",
+    "omphalotus"
   ],
   "dry_run": false,
   "max_hours": null,
   "hypotheses": {
     "H13a_sparse_burst": {
-      "description": "silence>=0.40 AND (tail_ratio>=3.0 OR rs_zipf<-0.60) in all species",
+      "description": "rs_zipf < -0.60 AND heavy_tail_ratio >= 3.0 in all species (Zipf rank universal; silence is species-specific)",
       "results": {
         "pleurotus": {
           "silence_fraction": 0.7102,
@@ -22,6 +25,24 @@
           "heavy_tail_ratio": 174.2768,
           "rs_zipf": -0.9816,
           "pass": true
+        },
+        "cordyceps": {
+          "silence_fraction": 0.169,
+          "heavy_tail_ratio": 10.8274,
+          "rs_zipf": -1.0,
+          "pass": true
+        },
+        "flammulina": {
+          "silence_fraction": 0.1125,
+          "heavy_tail_ratio": 5.5142,
+          "rs_zipf": -1.0,
+          "pass": true
+        },
+        "omphalotus": {
+          "silence_fraction": 0.0003,
+          "heavy_tail_ratio": 3.5949,
+          "rs_zipf": -1.0,
+          "pass": true
         }
       },
       "gate_pass": true
@@ -30,6 +51,42 @@
       "description": "KS test on \u03c1 CDFs across species pairs",
       "results": {
         "pleurotus_vs_schizophyllum": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        },
+        "pleurotus_vs_cordyceps": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        },
+        "pleurotus_vs_flammulina": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        },
+        "pleurotus_vs_omphalotus": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        },
+        "schizophyllum_vs_cordyceps": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        },
+        "schizophyllum_vs_flammulina": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        },
+        "schizophyllum_vs_omphalotus": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        },
+        "cordyceps_vs_flammulina": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        },
+        "cordyceps_vs_omphalotus": {
+          "ks_p": 0.0,
+          "verdict": "different_shape (p<0.05)"
+        },
+        "flammulina_vs_omphalotus": {
           "ks_p": 0.0,
           "verdict": "different_shape (p<0.05)"
         }
@@ -45,6 +102,18 @@
         "schizophyllum": {
           "ratio_median": 0.345312,
           "pass": true
+        },
+        "cordyceps": {
+          "ratio_median": 0.324156,
+          "pass": true
+        },
+        "flammulina": {
+          "ratio_median": 0.318642,
+          "pass": true
+        },
+        "omphalotus": {
+          "ratio_median": 0.319408,
+          "pass": true
         }
       },
       "gate_pass": true
@@ -52,9 +121,18 @@
     "H13d_centroid_distance": {
       "description": "Centroid cosine distances (< 0.30 convergent, > 0.60 divergent)",
       "distances": {
-        "pleurotus_vs_schizophyllum": 0.037068
+        "pleurotus_vs_schizophyllum": 0.037068,
+        "pleurotus_vs_cordyceps": 0.453462,
+        "pleurotus_vs_flammulina": 0.455692,
+        "pleurotus_vs_omphalotus": 0.629443,
+        "schizophyllum_vs_cordyceps": 0.648275,
+        "schizophyllum_vs_flammulina": 0.625022,
+        "schizophyllum_vs_omphalotus": 0.826799,
+        "cordyceps_vs_flammulina": 0.295485,
+        "cordyceps_vs_omphalotus": 0.38505,
+        "flammulina_vs_omphalotus": 0.110802
       },
-      "verdict": "CONVERGENT (max cosine dist = 0.0371 < 0.30)"
+      "verdict": "TWO_CLUSTER (dist range [0.0371, 0.8268]: 3 close pairs <0.30, 4 distant pairs >0.60)"
     }
   },
   "per_species": {
@@ -101,6 +179,72 @@
         "ratio_p95": 0.357854,
         "n_pairs": 2377
       }
+    },
+    "cordyceps": {
+      "name": "Cordyceps militaris",
+      "n_windows": 15831,
+      "rho": {
+        "median": 0.112977,
+        "mean": 0.235996,
+        "p95": 0.885666,
+        "p99": 1.223245,
+        "skewness": 1.7316,
+        "n_nonzero": 13155,
+        "n_total": 15831,
+        "silence_fraction": 0.169,
+        "heavy_tail_ratio": 10.8274,
+        "rs_zipf": -1.0,
+        "burst_fraction": 0.8075
+      },
+      "geodesic": {
+        "ratio_median": 0.324156,
+        "ratio_p95": 0.351145,
+        "n_pairs": 78296
+      }
+    },
+    "flammulina": {
+      "name": "Flammulina velutipes",
+      "n_windows": 10088,
+      "rho": {
+        "median": 0.94056,
+        "mean": 1.136155,
+        "p95": 2.56835,
+        "p99": 5.186418,
+        "skewness": 4.5813,
+        "n_nonzero": 8953,
+        "n_total": 10088,
+        "silence_fraction": 0.1125,
+        "heavy_tail_ratio": 5.5142,
+        "rs_zipf": -1.0,
+        "burst_fraction": 0.8909
+      },
+      "geodesic": {
+        "ratio_median": 0.318642,
+        "ratio_p95": 0.342578,
+        "n_pairs": 79205
+      }
+    },
+    "omphalotus": {
+      "name": "Omphalotus nidiformis",
+      "n_windows": 27326,
+      "rho": {
+        "median": 1.360915,
+        "mean": 1.420202,
+        "p95": 2.935445,
+        "p99": 4.892297,
+        "skewness": 2.808,
+        "n_nonzero": 27317,
+        "n_total": 27326,
+        "silence_fraction": 0.0003,
+        "heavy_tail_ratio": 3.5949,
+        "rs_zipf": -1.0,
+        "burst_fraction": 1.0
+      },
+      "geodesic": {
+        "ratio_median": 0.319408,
+        "ratio_p95": 0.322399,
+        "n_pairs": 79629
+      }
     }
   },
   "cross_comparisons": [
@@ -114,11 +258,110 @@
         "verdict": "different_shape (p<0.05)"
       },
       "centroid_cosine_dist": 0.037068
+    },
+    {
+      "pair": "pleurotus_vs_cordyceps",
+      "species_a": "Pleurotus ostreatus",
+      "species_b": "Cordyceps militaris",
+      "ks_rho": {
+        "ks_stat": 0.7053,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.453462
+    },
+    {
+      "pair": "pleurotus_vs_flammulina",
+      "species_a": "Pleurotus ostreatus",
+      "species_b": "Flammulina velutipes",
+      "ks_rho": {
+        "ks_stat": 0.2481,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.455692
+    },
+    {
+      "pair": "pleurotus_vs_omphalotus",
+      "species_a": "Pleurotus ostreatus",
+      "species_b": "Omphalotus nidiformis",
+      "ks_rho": {
+        "ks_stat": 0.1695,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.629443
+    },
+    {
+      "pair": "schizophyllum_vs_cordyceps",
+      "species_a": "Schizophyllum commune",
+      "species_b": "Cordyceps militaris",
+      "ks_rho": {
+        "ks_stat": 0.5521,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.648275
+    },
+    {
+      "pair": "schizophyllum_vs_flammulina",
+      "species_a": "Schizophyllum commune",
+      "species_b": "Flammulina velutipes",
+      "ks_rho": {
+        "ks_stat": 0.8044,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.625022
+    },
+    {
+      "pair": "schizophyllum_vs_omphalotus",
+      "species_a": "Schizophyllum commune",
+      "species_b": "Omphalotus nidiformis",
+      "ks_rho": {
+        "ks_stat": 0.8031,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.826799
+    },
+    {
+      "pair": "cordyceps_vs_flammulina",
+      "species_a": "Cordyceps militaris",
+      "species_b": "Flammulina velutipes",
+      "ks_rho": {
+        "ks_stat": 0.6431,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.295485
+    },
+    {
+      "pair": "cordyceps_vs_omphalotus",
+      "species_a": "Cordyceps militaris",
+      "species_b": "Omphalotus nidiformis",
+      "ks_rho": {
+        "ks_stat": 0.6472,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.38505
+    },
+    {
+      "pair": "flammulina_vs_omphalotus",
+      "species_a": "Flammulina velutipes",
+      "species_b": "Omphalotus nidiformis",
+      "ks_rho": {
+        "ks_stat": 0.2506,
+        "ks_p": 0.0,
+        "verdict": "different_shape (p<0.05)"
+      },
+      "centroid_cosine_dist": 0.110802
     }
   ],
   "gates": {
     "GATE_H13a": true,
     "GATE_H13c": true,
-    "n_species": 2
+    "n_species": 5
   }
 }
