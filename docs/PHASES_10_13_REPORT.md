@@ -109,13 +109,13 @@ time_dilation_test   → dt ∝ 1/ρ test (Phase 9)
 
 **Fig 11a — ρ Distribution and Zipf Rank-Log Plot**
 
-![fig_11a](../experiments/results/figures/fig_11a_rho_distribution.png)
+![fig_11a](../experiments/results/fig_11a_rho_distribution.png)
 
 Left panel: the ρ histogram is strongly right-skewed — 71% of windows are silent (ρ<0.001), while rare high-density windows reach ρ>10. Right panel: log-rank vs log-ρ (descending sort) yields a straight line — confirming Zipf's law holds in real fungal electrical activity. The Spearman rs for log-rank correlation is **−0.995**, and the heavy-tail ratio ρ_p99/median is **3.0×**.
 
 **Fig 11b — Time Dilation**
 
-![fig_11b](../experiments/results/figures/fig_11b_time_dilation.png)
+![fig_11b](../experiments/results/fig_11b_time_dilation.png)
 
 Log-log scatter of mean ρ vs ISI proxy per window. In the UKFT framework, if the ρ-field determines the local flow of subjective time, then low-ρ regions should correspond to long inter-spike intervals (slow time) and high-ρ regions to short ISIs (fast time). The real data reproduce this: Spearman r=**+0.392** (p=1.3×10⁻⁵⁰). The theoretical fit line dt = C/ρ is shown.
 
@@ -123,7 +123,7 @@ The attenuation from the synthetic r=+0.976 is expected: real recordings carry D
 
 **Fig 11c — Geodesic Compression**
 
-![fig_11c](../experiments/results/figures/fig_11c_geodesic_ratio.png)
+![fig_11c](../experiments/results/fig_11c_geodesic_ratio.png)
 
 Distribution of geodesic/Euclidean ratios across the 462 evaluated window pairs. The median ratio is **0.183** — geodesic paths through the manifold are consistently 5.5× shorter than the straight Euclidean distance would predict. All 462 pairs (100%) have ratio < 1.0 (i.e., the manifold is everywhere hyperbolic, never flat or spherical). The negative Spearman(ρ, ratio) = −0.207 means that denser regions are *more* geodesically compressed — higher field density creates deeper curvature.
 
@@ -170,7 +170,7 @@ If the UKFT framework is correct, the animal's ρ-field encodes genuine structur
 
 **Fig 12a — JEPA Surprise vs ρ and Score Correlations**
 
-![fig_12a](../experiments/results/figures/fig_12a_jepa_surprise_rho.png)
+![fig_12a](../experiments/results/fig_12a_jepa_surprise_rho.png)
 
 Left panel: scatter of S vs ρ for all 6,506 window pairs. Burst windows (orange) cluster in the high-ρ, high-S quadrant; silent windows (grey) cluster near the origin. The Spearman rs=+0.878 line is shown. Right panel: bar chart of all three UKFT score correlations vs JEPA S.
 
@@ -231,19 +231,19 @@ All datasets sourced from Adamatzky's Zenodo repository of fungal electrophysiol
 
 **Fig 13a — Geodesic Ratio: Universal Geometry Across 5 Species**
 
-![fig_13a](../experiments/results/figures/fig_13a_geodesic_universal.png)
+![fig_13a](../experiments/results/fig_13a_geodesic_universal.png)
 
 Bar chart of geodesic compression ratio per species with error bar. The grey horizontal band marks the universality zone [0.31, 0.36]. Every species falls within this band. The inset shows that the ratio variance (band width 0.026) is negligible compared to the 3,300× variation in silence fraction (shown separately in Fig 13b).
 
 **Fig 13b — Silence Spectrum and Heavy-Tail Ratios**
 
-![fig_13b](../experiments/results/figures/fig_13b_silence_spectrum.png)
+![fig_13b](../experiments/results/fig_13b_silence_spectrum.png)
 
 Left: silence fraction per species. Right: heavy-tail ratio (ρ_p99/median) on log scale. These are the *biological* variables — species-specific, reflecting ecology, physiology, and experimental conditions. Schizophyllum (98.5% silent, heavy-tail ratio 174×) and Omphalotus (0.03% silent) represent extremes of activation density. Yet their manifold geometry is indistinguishable.
 
 **Fig 13c — Cross-Species Centroid Distance Matrix**
 
-![fig_13c](../experiments/results/figures/fig_13c_centroid_heatmap.png)
+![fig_13c](../experiments/results/fig_13c_centroid_heatmap.png)
 
 5×5 matrix of cosine distances between mean embedding centroids. Two clusters emerge:
 
@@ -312,7 +312,7 @@ The operational consequence: a **single projection head**, trained only on Pleur
 
 **All 7 primary figures composited into a single panel:**
 
-![fig_summary](../experiments/results/figures/fig_summary.png)
+![fig_summary](../experiments/results/fig_summary.png)
 
 ---
 
@@ -333,4 +333,4 @@ The four experiments establish a solid empirical foundation. The key open questi
 ---
 
 *Generated from `ukftbio/experiments/13_varietal_comparison.py` and `ukftbio/experiments/figures_10_to_13.py`.*  
-*All figures in `experiments/results/figures/`. All result JSONs in `experiments/results/`.*
+*All figures in `experiments/results/`. All result JSONs in `experiments/results/`.*
