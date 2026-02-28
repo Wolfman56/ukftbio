@@ -197,11 +197,13 @@ wave / guidance field that precedes choice collapse.
 | Exp | Title | Key Result | Status |
 |-----|-------|-----------|--------|
 | 14 | Two-Tier Communication | Schizophyllum ratio=**69.6×** local-dominant; Omphalotus=**0.003×** global-dominant; all species Zipf-like local density — *Epiphany 11: the silence IS the signal* | ✅ |
+| 15 | Semantic Context + JEPA Dual-Tier | eco. stress rs=**+1.000** with ratio; Cordyceps H15a ✓ (S_global=0.282 > S_local=0.159); degenerate tiers confirm one-tier phenotypes — *Epiphany 12: strategy is ecology, not taxonomy* | ✅ |
 
 ### Running Phase 4
 
     conda activate ukftbio
     python experiments/14_local_global_tiers.py
+    python experiments/15_semantic_jepa_tiers.py
 
 ### Phase 4 Key Numbers
 
@@ -216,6 +218,11 @@ wave / guidance field that precedes choice collapse.
 | Omphalotus local spatial coherence | mean\|r\| = **0.323** | Exp 14 |
 | Zipf-like local density | **4 / 4 species** confirmed | Exp 14 |
 | Omphalotus local-leads-global lag | **+28 windows (280 min)** | Exp 14 |
+| rs (ecological stress vs ratio) | **+1.000** (perfect rank) | Exp 15 |
+| rs (broadcast cost vs ratio) | **+1.000** (perfect rank) | Exp 15 |
+| Cordyceps JEPA gap S_global − S_local | **+0.123** (H15a ✓) | Exp 15 |
+| Schizophyllum S_global | **0.000** (trivially flat) | Exp 15 |
+| Omphalotus local tier | **NaN** (degenerate — no local tier) | Exp 15 |
 
 ### Phase 4 Canonical Figures
 
@@ -225,6 +232,11 @@ wave / guidance field that precedes choice collapse.
 | 14 | `14_ratio_per_species.png` | ρ_local / ρ_global ratio per species |
 | 14 | `14_crosscorr_lag.png` | Cross-correlation panels — local vs global temporal lead/lag |
 | 14 | `14_spatial_topology.png` | 2×4 spatial correlation matrices — topology inversion |
+| 15 | `15_metadata_radar.png` | Radar chart: 5 normalised ecological traits × 4 species |
+| 15 | `15_ratio_vs_metadata.png` | 3-panel scatter: ratio vs stress / lifespan / mating types |
+| 15 | `15_phylogenetic_strategy.png` | Evolutionary distance vs communication ratio |
+| 15 | `15_jepa_surprise_tiers.png` | JEPA surprise: local vs global (hatched = degenerate tier) |
+| 15 | `15_surprise_gap_vs_stress.png` | (S_global − S_local) vs ecological stress |
 
 ### Epiphanies
 
@@ -237,13 +249,24 @@ build-up. Omphalotus does the opposite: constant independent channel broadcasts
 These are two distinct strategies for solving the collective decision problem,
 not two points on an activity continuum.
 
-### Next Planned (Exp 15+)
+**Epiphany 12** (Exp 15): Communication strategy is driven by ecology, not
+taxonomy. Ecological stress and broadcast cost achieve perfect monotone rank
+correlation (rs = 1.000) with the local/global ratio — the Ascomyceta/Basidiomycota
+split (800 Mya) is less predictive (rs = 0.6). Local-dominant communication is
+a convergent adaptation to energetic cost and environmental pressure: expensive
+global broadcasting is reserved for when entropy minimisation demands it (principle
+of least action in biological form).  Cordyceps (the only species with both tiers
+active at scale) confirms that local tier is more temporally predictable than
+global tier — consistent with UKFT: guidance field is deterministic, choice
+collapse is not.
+
+### Next Planned (Exp 16+)
 
 | Exp | Title | Description |
 |-----|-------|-------------|
-| 15 | Cross-Species JEPA Transfer | Train JEPA on Pleurotus, score on all 5 species — does temporal structure transfer? |
-| 16 | Cross-Species Anomaly Scan | HEP-explorer blind scan across all 5 species jointly |
-| 17 | Duroxide Orchestration | Durable-execution replay for reproducible fungal pipelines |
+| 16 | Cross-Species JEPA Transfer | Train JEPA on Pleurotus, score on all 5 species — does temporal structure transfer? |
+| 17 | Cross-Species Anomaly Scan | HEP-explorer blind scan across all 5 species jointly |
+| 18 | Duroxide Orchestration | Durable-execution replay for reproducible fungal pipelines |
 
 ---
 

@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "Schizophyllum": {
+      "full_name": "Schizophyllum commune",
+      "phylum": "Basidiomycota",
+      "order": "Polyporales",
+      "ecological_stress": 0.9,
+      "colony_lifespan_yr": 30.0,
+      "mating_types": 28000,
+      "evolutionary_age_Ma": 250.0,
+      "broadcast_cost": 4.5,
+      "local_global_ratio": 69.578,
+      "exp14_global_coherence": 0.999
+    },
+    "Cordyceps": {
+      "full_name": "Cordyceps militaris",
+      "phylum": "Ascomycota",
+      "order": "Hypocreales",
+      "ecological_stress": 0.7,
+      "colony_lifespan_yr": 0.2,
+      "mating_types": 2,
+      "evolutionary_age_Ma": 800.0,
+      "broadcast_cost": 3.0,
+      "local_global_ratio": 16.618,
+      "exp14_global_coherence": 0.066
+    },
+    "Enoki": {
+      "full_name": "Flammulina velutipes",
+      "phylum": "Basidiomycota",
+      "order": "Agaricales",
+      "ecological_stress": 0.5,
+      "colony_lifespan_yr": 7.0,
+      "mating_types": 150,
+      "evolutionary_age_Ma": 100.0,
+      "broadcast_cost": 2.5,
+      "local_global_ratio": 0.247,
+      "exp14_global_coherence": 0.064
+    },
+    "Omphalotus": {
+      "full_name": "Omphalotus nidiformis",
+      "phylum": "Basidiomycota",
+      "order": "Agaricales",
+      "ecological_stress": 0.2,
+      "colony_lifespan_yr": 2.0,
+      "mating_types": 4,
+      "evolutionary_age_Ma": 150.0,
+      "broadcast_cost": 1.5,
+      "local_global_ratio": 0.003,
+      "exp14_global_coherence": 0.0
+    }
+  },
+  "jepa_results": {
+    "Schizophyllum": {
+      "local_surprise_mean": 0.06705532968044281,
+      "global_surprise_mean": 2.432041037536692e-05,
+      "surprise_gap": -0.06703100927006744
+    },
+    "Cordyceps": {
+      "local_surprise_mean": 0.15857325494289398,
+      "global_surprise_mean": 0.2822309732437134,
+      "surprise_gap": 0.1236577183008194
+    },
+    "Enoki": {
+      "local_surprise_mean": 0.3920218348503113,
+      "global_surprise_mean": 0.3626169264316559,
+      "surprise_gap": -0.029404908418655396
+    },
+    "Omphalotus": {
+      "local_surprise_mean": NaN,
+      "global_surprise_mean": 0.2721922695636749,
+      "surprise_gap": NaN
+    }
+  },
+  "semantic_spearman": {
+    "stress": {
+      "rs": 1.0,
+      "pval": 0.0
+    },
+    "lifespan": {
+      "rs": 0.39999999999999997,
+      "pval": 0.6
+    },
+    "mating_types": {
+      "rs": 0.39999999999999997,
+      "pval": 0.6
+    },
+    "evo_distance": {
+      "rs": 0.6000000000000001,
+      "pval": 0.3999999999999999
+    },
+    "broadcast_cost": {
+      "rs": 1.0,
+      "pval": 0.0
+    }
+  }
+}
