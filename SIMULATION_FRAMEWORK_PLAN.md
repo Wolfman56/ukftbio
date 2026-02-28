@@ -352,3 +352,138 @@ folding deferred to post-Phase 3:
 3. **Start Exp 06**: Build mycelium graph, compute per-node ρ, visualize
 4. **Draft Bio Paper 02** outline (branching as choice operator) in parallel with Exp 06-07
 5. **Contact**: William Brown / ISF for biophoton ultrafast spectroscopy data (Exp 08 target)
+
+---
+
+## 11. Bioenergetic Communication Constraints (Future Research Direction)
+
+> *Raised after Exp 21 (normalisation ablation). The Epiphany 14 finding — that the η matrix
+> encodes intrinsic temporal grammar invariant to distributional shape — begs a deeper question:
+> what physical constraint **fixes** a species's temporal grammar in the first place?*
+
+### The Core Question
+
+Three tightly linked sub-questions:
+
+1. **Cost per signal** — How much energy (ATP, electrochemical gradient dissipation) does
+   each communication event (spike, burst, electrical pulse) actually consume?
+2. **Harvest and storage efficiency** — How efficiently does the organism collect energy
+   from its substrate (cellulose decay, parasitic infection, photosynthesis) and store it
+   (glycogen, trehalose, lipid droplets)? What is the organism's effective power budget?
+3. **Mode selection** — Given budget and cost, what temporal grammar is physically
+   affordable? Does the observed spike statistics (CV, kurtosis, Hurst, spectral entropy)
+   follow from the energy constraint?
+
+### Theoretical Scaffolding
+
+#### Landauer Bound
+
+The minimum energy required to communicate one bit of information:
+
+    E_bit ≥ kT ln 2 ≈ 2.85 × 10⁻²¹ J  (at biological T ≈ 300 K)
+
+Real biological signals cost far more — a single action-potential-analog event in
+mycelium likely costs 10³–10⁶ × the Landauer minimum due to ion-pump overhead.  The
+gap between Landauer limit and actual cost is the **thermodynamic slack** — room for
+evolution to optimise signaling efficiency.
+
+#### Signal Budget Equation
+
+    E_available(t) = E_harvest_rate × storage_efficiency − metabolic_overhead
+    Signal_budget   = E_available / E_per_signal    [signals per unit time]
+
+The Signal_budget directly constrains the maximum sustainable spike rate and therefore
+sets the time-average CV, kurtosis shape, and AR1 structure:
+
+| Budget regime | Predicted temporal grammar | UKFT interpretation |
+|---|---|---|
+| Low budget (tight) | Sparse, kurtotic bursts (high κ) — save energy, fire only at information maxima | Choice collapses are rare but action-minimizing |
+| Moderate budget (sustained) | Smooth, continuous, low-CV — affordable steady signal | Dense guidance field (high ρ) maintained continuously |
+| High budget (burst reserve) | Superdiffusive trending (H > 1) — territorial expansion while resources last | Pilot wave pushes outward; choice collapses encode new territory |
+
+#### Connection to Observed Species
+
+| Species | Lifestyle / substrate | Energy budget hypothesis | Observed grammar | Prediction |
+|---|---|---|---|---|
+| Omphalotus olearius | Wood pathogen (cellulose — energy-expensive) | Low sustained, moderate burst reserve | κ = 73.703, CV = 0.058 — sparse, kurtotic | Energy-limited sparse code |
+| Cordyceps militaris | Entomopathogen (hijacks host hemolymph — nutrient-rich) | High sustained availability during infection | κ = −1.149, CV = 0.214 — smooth, Gaussian | Energy-rich steady-state code |
+| Schizophyllum commune | Ubiquitous wood rotter under high ecological stress | Variable; stress-driven expanding territory | H = 1.216, CV = 1.532 — superdiffusive trend | Territorial expansion under resource gradient |
+| Enoki (Flammulina) | Cold-climate wood decay, low growth temp | Moderate, metabolically constrained by temperature | AR1 = 0.595, moderate persistence | Temperature-limited moderate budget |
+| Pleurotus ostreatus | Aggressive wood decomposer, high conversion efficiency | High burst capacity, efficient cellulases | CV = 2.031, highest bursty profile | High-efficiency harvest → burst signaling affordable |
+
+#### Why This Unifies Previous Epiphanies
+
+- **Epiphany 12** (ecology → communication strategy, rs = 1.000 with broadcast cost):
+  ecological stress is a proxy for *energy budget pressure* — the real predictor is not
+  stress per se but substrate energy density relative to metabolic demand.
+
+- **Epiphany 14** (η matrix intrinsic, invariant to rank-norm): two organisms with
+  *compatible energy budgets* evolve temporal grammars that are predictable by each other.
+  Omphalotus (sparse-budget code) and Cordyceps (dense-budget code) are compatible because
+  their temporal grammars are both organised around energy conservation — one via sparse
+  bursting, one via smooth efficiency.  Energy budget proximity → η proximity.
+
+- **Schizophyllum isolation** (consistently lowest η-as-target): its superdiffusive
+  H = 1.216 reflects a completely different energy strategy — territorial expansion, not
+  local optimisation.  Hard to predict by any temporally stationary model.
+
+### Proposed Research Programme
+
+#### Exp 22 (near-term): Linear De-Trending Ablation
+
+Separate Schizophyllum's H > 1 trend from its temporal grammar.  Linear-detrend all
+rho series, then rank-normalise.  If Schizophyllum-as-target recovers, the trend
+(territorial expansion budget signal) was the isolating factor, not intrinsic grammar
+incompatibility.  If it does not recover, the grammar itself is incompatible.
+
+#### Exp 23 (medium-term): Energy Budget Score from Literature
+
+Assemble per-species energy budget parameters from published biochemistry:
+- Cellulose/lignin conversion efficiency (laccase, peroxidase activity per g mycelium)
+- Measured trehalose / glycogen concentration (storage capacity proxy)
+- Respiration rate at standard temperature (ATP flux proxy)
+- Activation energy threshold for sporulation / hyphal extension (burst reserve proxy)
+
+Compute a scalar **Energy Budget Score (EBS)** per species and test:
+
+    H(EBS): Spearman rs(|EBS_i − EBS_j|, η_ij) < 0
+
+Prediction: the smaller the difference in energy budget between two species, the higher
+their JEPA transfer efficiency.
+
+#### Exp 24 (long-term): Landauer Efficiency Ratio
+
+For each observed spike event in the Adamatzky data, estimate the minimum Shannon
+information content (bits per event) and divide by the estimated ATP cost of that event
+from electrophysiology literature.  Compute the **Landauer Efficiency Ratio**:
+
+    LER = H(X) / (E_event / E_Landauer)
+
+Test whether species with higher LER (closer to Landauer limit — more informationally
+efficient per joule) show higher self-JEPA surprise (denser temporal grammar) and
+whether LER differences predict η pairs.
+
+This would be the first measurement connecting Landauer's thermodynamic information bound
+to observable mycelium electrophysiology.
+
+#### Longer-term: Physiological Constraints on Choice Operator
+
+The UKFT choice operator is formally discrete and action-minimizing.  The bioenergetic
+framing adds a physical floor:
+
+    C ≥ kT ln 2   (Landauer: minimum energy to make an irreversible choice)
+
+This grounds the abstract UKFT choice operator in real thermodynamics.  An organism
+cannot make more choices per unit time than its energy budget permits — the rate of
+choice collapse is physically upper-bounded.  The temporal grammar IS the energy budget
+made observable.
+
+### Data Requirements
+
+| Parameter | Source | Notes |
+|---|---|---|
+| Cellulose conversion efficiency | BRENDA enzyme database | Per-species laccase/peroxidase kcat |
+| Trehalose / glycogen content | Published fungal physiology (e.g., Stajich lab datasets) | Storage capacity proxy |
+| Mycelium respiration rate | Respirometer studies (CO₂ evolution) | ATP flux proxy |
+| Electrophysiological signal energy | Adamatzky signal energy estimates | Joules per spike |
+| ATP cost of action-potential analog | Biophysics literature (Attwell & Laughlin 2001 framework) | Cost per electrical event |

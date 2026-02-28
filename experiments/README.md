@@ -289,6 +289,24 @@ life-history fingerprint: each species speaks its own dialect.
 | 17 | Cross-Species Anomaly Scan | HEP-explorer blind scan across all 5 species jointly |
 | 18 | Duroxide Orchestration | Durable-execution replay for reproducible fungal pipelines |
 | 19 | CV-Stratified JEPA Transfer | Group species by CV tier (bursty vs smooth) and test intra-group transfer — is CV the true grammar boundary? |
+| 20 | Temporal Grammar Fingerprint | Causal feature analysis: kurtosis as proxy for temporal dynamics (κ only significant predictor of η, rs=+0.480, p=0.032 across 20 pairs) |
+| 21 | Normalisation Ablation | Rank/probit transform to equalize marginal shapes — kurtosis advantage persists (OM→CO: 0.790→0.740); η ordering intrinsic rs=0.790 (**Epiphany 14**) |
+
+**Next Planned (Exp 22+):**
+
+| Exp | Title | Rationale |
+|-----|-------|----------|
+| 22 | Linear De-Trending Ablation | Linear-detrend each rho series before rank-norm. Tests whether Schizophyllum H=1.216 (superdiffusive trend) is the isolating mechanism or if the grammar incompatibility is deeper. |
+| 23 | Energy Budget Score vs η Matrix | Assemble per-species energy budget parameters from literature (cellulose conversion efficiency, trehalose/glycogen storage, respiration rate). Test H: \|EBS_i − EBS_j\| predicts η_ij — organisms with similar energy budgets should have compatible temporal grammars. |
+| 24 | Landauer Efficiency Ratio | Estimate bits-per-event from spike statistics and ATP cost from electrophysiology literature. Compute LER = H(X) / (E_event / E_Landauer). Test whether more Landauer-efficient species show denser temporal grammar and whether LER differences predict η pairs. |
+
+> **Bioenergetic framing (added Exp 21 session):** The core question driving Exp 22-24 is whether
+> the η matrix — now confirmed intrinsic and invariant to distributional shape — can be *predicted*
+> from first-principles energy budgets.  Each organism's temporal grammar may be the observable
+> signature of its energy strategy: how much does it cost to communicate, how efficiently does
+> it harvest and store energy, and what grammar can it physically afford?  The Landauer bound
+> sets the thermodynamic floor; the organism's ecology sets the ceiling.  The η matrix lives
+> between them.  See SIMULATION_FRAMEWORK_PLAN.md §11 for full treatment.
 
 ---
 
