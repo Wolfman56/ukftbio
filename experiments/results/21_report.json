@@ -1,0 +1,181 @@
+{
+  "exp19_eta_range": 0.5525,
+  "exp21_eta_range": 0.57041,
+  "range_shrinkage_pct": -3.24,
+  "ordering_rs": 0.78947,
+  "ordering_p": 3e-05,
+  "key_pairs": {
+    "Omphalotus\u2192Cordyceps": {
+      "eta19": 0.7904,
+      "eta21": 0.74008
+    },
+    "Cordyceps\u2192Omphalotus": {
+      "eta19": 0.7263,
+      "eta21": 0.691
+    }
+  },
+  "schizophyllum_row_mean": {
+    "eta19": 0.44675,
+    "eta21": 0.41366
+  },
+  "all_pairs": [
+    {
+      "src": "Pleurotus",
+      "tgt": "Schizophyllum",
+      "eta19": 0.2866,
+      "eta21": 0.1729,
+      "delta": -0.1137
+    },
+    {
+      "src": "Pleurotus",
+      "tgt": "Cordyceps",
+      "eta19": 0.5495,
+      "eta21": 0.62285,
+      "delta": 0.07335
+    },
+    {
+      "src": "Pleurotus",
+      "tgt": "Enoki",
+      "eta19": 0.3368,
+      "eta21": 0.35069,
+      "delta": 0.01389
+    },
+    {
+      "src": "Pleurotus",
+      "tgt": "Omphalotus",
+      "eta19": 0.5076,
+      "eta21": 0.53388,
+      "delta": 0.02628
+    },
+    {
+      "src": "Schizophyllum",
+      "tgt": "Pleurotus",
+      "eta19": 0.592,
+      "eta21": 0.50914,
+      "delta": -0.08286
+    },
+    {
+      "src": "Schizophyllum",
+      "tgt": "Cordyceps",
+      "eta19": 0.35,
+      "eta21": 0.4358,
+      "delta": 0.0858
+    },
+    {
+      "src": "Schizophyllum",
+      "tgt": "Enoki",
+      "eta19": 0.3555,
+      "eta21": 0.28355,
+      "delta": -0.07195
+    },
+    {
+      "src": "Schizophyllum",
+      "tgt": "Omphalotus",
+      "eta19": 0.4895,
+      "eta21": 0.42616,
+      "delta": -0.06334
+    },
+    {
+      "src": "Cordyceps",
+      "tgt": "Pleurotus",
+      "eta19": 0.6397,
+      "eta21": 0.61522,
+      "delta": -0.02448
+    },
+    {
+      "src": "Cordyceps",
+      "tgt": "Schizophyllum",
+      "eta19": 0.4992,
+      "eta21": 0.23128,
+      "delta": -0.26792
+    },
+    {
+      "src": "Cordyceps",
+      "tgt": "Enoki",
+      "eta19": 0.3737,
+      "eta21": 0.3897,
+      "delta": 0.016
+    },
+    {
+      "src": "Cordyceps",
+      "tgt": "Omphalotus",
+      "eta19": 0.7263,
+      "eta21": 0.691,
+      "delta": -0.0353
+    },
+    {
+      "src": "Enoki",
+      "tgt": "Pleurotus",
+      "eta19": 0.5405,
+      "eta21": 0.55379,
+      "delta": 0.01329
+    },
+    {
+      "src": "Enoki",
+      "tgt": "Schizophyllum",
+      "eta19": 0.2379,
+      "eta21": 0.16967,
+      "delta": -0.06823
+    },
+    {
+      "src": "Enoki",
+      "tgt": "Cordyceps",
+      "eta19": 0.37,
+      "eta21": 0.37264,
+      "delta": 0.00264
+    },
+    {
+      "src": "Enoki",
+      "tgt": "Omphalotus",
+      "eta19": 0.432,
+      "eta21": 0.3281,
+      "delta": -0.1039
+    },
+    {
+      "src": "Omphalotus",
+      "tgt": "Pleurotus",
+      "eta19": 0.632,
+      "eta21": 0.6454,
+      "delta": 0.0134
+    },
+    {
+      "src": "Omphalotus",
+      "tgt": "Schizophyllum",
+      "eta19": 0.5286,
+      "eta21": 0.22229,
+      "delta": -0.30631
+    },
+    {
+      "src": "Omphalotus",
+      "tgt": "Cordyceps",
+      "eta19": 0.7904,
+      "eta21": 0.74008,
+      "delta": -0.05032
+    },
+    {
+      "src": "Omphalotus",
+      "tgt": "Enoki",
+      "eta19": 0.3912,
+      "eta21": 0.36764,
+      "delta": -0.02356
+    }
+  ],
+  "hypotheses": {
+    "H21a": {
+      "result": "not_confirmed",
+      "om_co_eta21": 0.7401
+    },
+    "H21b": {
+      "result": "not_confirmed",
+      "range_shrinkage_pct": -3.24
+    },
+    "H21c": {
+      "result": "confirmed",
+      "ordering_rs": 0.7895
+    },
+    "H21d": {
+      "result": "not_confirmed",
+      "sz_delta": -0.0331
+    }
+  }
+}
