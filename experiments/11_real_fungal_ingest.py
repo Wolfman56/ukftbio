@@ -68,12 +68,12 @@ Key Comparisons
 
 Outputs
 ───────
-  results/exp11_summary.json           — all canonical numbers
-  results/exp11_pipeline_comparison.png — Exp10 (synthetic) vs Exp11 (real) bar chart
-  results/exp11_rho_distribution.png   — ρ distribution: real vs expected
-  results/exp11_time_dilation.png      — Spearman plot ρ vs ISI
-  results/exp11_borda_topk.png         — Top-10 Borda candidates timeline
-  results/exp11_geodesic_ratio.png     — geodesic/Euclidean distribution
+  results/exp11_summary.json                    — all canonical numbers
+  results/figures/exp11_pipeline_comparison.png  — Exp10 (synthetic) vs Exp11 (real) bar chart
+  results/figures/exp11_rho_distribution.png     — ρ distribution: real vs expected
+  results/figures/exp11_time_dilation.png        — Spearman plot ρ vs ISI
+  results/figures/exp11_borda_topk.png           — Top-10 Borda candidates timeline
+  results/figures/exp11_geodesic_ratio.png       — geodesic/Euclidean distribution
 """
 
 import json
@@ -86,9 +86,11 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
-RESULTS  = Path(__file__).resolve().parent.parent / "results"
+RESULTS  = Path(__file__).resolve().parent / "results"
+FIGURES  = RESULTS / "figures"
 MYCO     = Path(__file__).resolve().parent.parent.parent / "noosphere/apps/myco-explorer"
 RESULTS.mkdir(exist_ok=True)
+FIGURES.mkdir(exist_ok=True)
 
 # ── 1. Load all myco-explorer result artefacts ───────────────────────────────
 
@@ -214,7 +216,7 @@ def plot_pipeline_comparison(d: dict):
     ax.legend(fontsize=7, loc="upper left")
 
     plt.tight_layout()
-    out = RESULTS / "exp11_pipeline_comparison.png"
+    out = FIGURES / "exp11_pipeline_comparison.png"
     plt.savefig(out, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {out}")
@@ -250,7 +252,7 @@ def plot_rho_distribution(d: dict):
     ax.text(0.62, 0.92, "fast channel\n(pre-collapsed)",
             transform=ax.transAxes, fontsize=8, color="#2a7a2a", va="top")
     plt.tight_layout()
-    out = RESULTS / "exp11_rho_distribution.png"
+    out = FIGURES / "exp11_rho_distribution.png"
     plt.savefig(out, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {out}")
@@ -317,7 +319,7 @@ def plot_time_dilation(d: dict):
             transform=ax.transAxes, ha="right", va="bottom", fontsize=8,
             color="#555555", style="italic")
     plt.tight_layout()
-    out = RESULTS / "exp11_time_dilation.png"
+    out = FIGURES / "exp11_time_dilation.png"
     plt.savefig(out, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {out}")
@@ -369,7 +371,7 @@ def plot_borda_topk(d: dict):
     ax.legend(fontsize=9)
     ax.set_xlim(-5, total_h + 5)
     plt.tight_layout()
-    out = RESULTS / "exp11_borda_topk.png"
+    out = FIGURES / "exp11_borda_topk.png"
     plt.savefig(out, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {out}")
@@ -420,7 +422,7 @@ def plot_geodesic_ratio(d: dict):
             transform=ax.transAxes, fontsize=8, va="top", color="#993300",
             bbox=dict(boxstyle="round,pad=0.3", facecolor="lightyellow", alpha=0.8))
     plt.tight_layout()
-    out = RESULTS / "exp11_geodesic_ratio.png"
+    out = FIGURES / "exp11_geodesic_ratio.png"
     plt.savefig(out, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"  Saved: {out}")

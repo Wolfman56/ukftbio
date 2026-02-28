@@ -1,0 +1,57 @@
+{
+  "experiment": "11_real_fungal_ingest",
+  "dataset": {
+    "source": "Adamatzky (2020), Zenodo 18707716",
+    "file": "Star_Lab03.picolog",
+    "device": "PicoLog ADC24, 8 differential channels",
+    "duration_h": 217,
+    "n_samples": 688000,
+    "sample_rate_hz": 1.0
+  },
+  "phase1_spikes": {
+    "n_spikes": 2534,
+    "n_burst_spikes": 2173,
+    "burst_fraction": 0.8575
+  },
+  "phase2_windows": {
+    "n_windows": 6507,
+    "n_active": 1886,
+    "active_fraction": 0.2898,
+    "rho_median": 1.1111,
+    "rho_p95": 3.3333
+  },
+  "phase7_injection": {
+    "recall_at_50": 0.8,
+    "recall_at_100": 1.0,
+    "pass_50": true,
+    "pass_100": true
+  },
+  "phase8_geodesic": {
+    "median_ratio": 0.1833,
+    "spearman_rs": -0.2074,
+    "spearman_p": 7e-06,
+    "frac_below_1": 1.0,
+    "pass_all": true
+  },
+  "phase9_time_dilation": {
+    "spearman_rs": 0.3918,
+    "spearman_p": 0.0,
+    "cv_isi": 3.6565,
+    "cv_dteff": 3.0579,
+    "burst_isi_mean_s": 454.73,
+    "nonburst_isi_mean_s": 817.26,
+    "n_pass": 3,
+    "overall": "CONFIRMED"
+  },
+  "vs_exp10_synthetic": {
+    "time_dilation_r": {
+      "exp10": 0.976,
+      "exp11": 0.3918
+    },
+    "geodesic_median_ratio": {
+      "exp10": 0.86,
+      "exp11": 0.1833
+    },
+    "note": "exp11 time-dilation r weaker (noise, drift) but non-Riemannian compression STRONGER (real long-range correlations H\u22480.59 vs synthetic)"
+  }
+}
