@@ -282,6 +282,24 @@ similar persistence structure (AR1 = 0.911 vs Pleurotus 0.769), despite being
 from an entirely different phylum diverged 800 Mya ago. Temporal grammar is a
 life-history fingerprint: each species speaks its own dialect.
 
+**Epiphany 14** (Exp 21): The η matrix encodes genuine intrinsic temporal grammar
+compatibility, invariant to monotone value transformations.  After rank/probit
+normalisation equalises all marginal distribution shapes (Omphalotus κ: 73.703 →
+−0.032), the rank ordering of 20 pair η values is preserved (rs = 0.790, p ≈ 0).
+The kurtosis of Exp 20 was a symptom, not the cause — the compatibility is encoded in
+the temporal ordering of density events, not their amplitude statistics.
+
+**Epiphany 15** (Exp 22): The η matrix encodes two separable compatibility signals:
+(1) **Macro-trend co-movement** — species whose rho series share a slow drift exploit
+this via JEPA trend prediction; removing the trend via linear detrend collapses
+Omphalotus→Cordyceps from 0.790 to 0.536 (−0.254 total from raw);
+(2) **Stationary temporal grammar** — residual spike structure incompatible with simple
+distributional removal; revealed in the compressed post-detrend η range [0.25, 0.58]
+(40% narrower than raw).  Schizophyllum's Exp 21 collapse (0.529 → 0.222 as target) was
+trend-interference in rank space, not grammar incompatibility — it recovers to 0.405
+after detrend.  The Omphalotus↔Cordyceps extreme high-η was primarily Signal 1
+(trend), not Signal 2 (grammar).
+
 ### Next Planned (Exp 17+)
 
 | Exp | Title | Description |
@@ -291,22 +309,22 @@ life-history fingerprint: each species speaks its own dialect.
 | 19 | CV-Stratified JEPA Transfer | Group species by CV tier (bursty vs smooth) and test intra-group transfer — is CV the true grammar boundary? |
 | 20 | Temporal Grammar Fingerprint | Causal feature analysis: kurtosis as proxy for temporal dynamics (κ only significant predictor of η, rs=+0.480, p=0.032 across 20 pairs) |
 | 21 | Normalisation Ablation | Rank/probit transform to equalize marginal shapes — kurtosis advantage persists (OM→CO: 0.790→0.740); η ordering intrinsic rs=0.790 (**Epiphany 14**) |
+| 22 | Linear De-Trending Ablation | Detrend+rank-norm: SZ target recovers (0.199→0.364, H22a ✓); OM→CO drops 0.790→0.536 (H22b ✗); rs=0.762 preserved (H22c ✓) — **Epiphany 15: two signals in η matrix (trend vs grammar)** |
 
-**Next Planned (Exp 22+):**
+**Next Planned (Exp 23+):**
 
 | Exp | Title | Rationale |
 |-----|-------|----------|
-| 22 | Linear De-Trending Ablation | Linear-detrend each rho series before rank-norm. Tests whether Schizophyllum H=1.216 (superdiffusive trend) is the isolating mechanism or if the grammar incompatibility is deeper. |
-| 23 | Energy Budget Score vs η Matrix | Assemble per-species energy budget parameters from literature (cellulose conversion efficiency, trehalose/glycogen storage, respiration rate). Test H: \|EBS_i − EBS_j\| predicts η_ij — organisms with similar energy budgets should have compatible temporal grammars. |
-| 24 | Landauer Efficiency Ratio | Estimate bits-per-event from spike statistics and ATP cost from electrophysiology literature. Compute LER = H(X) / (E_event / E_Landauer). Test whether more Landauer-efficient species show denser temporal grammar and whether LER differences predict η pairs. |
+| 23 | Energy Budget Score vs Decomposed η | Build per-species EBS from literature (cellulose efficiency, trehalose/glycogen, respiration rate). Test: \|EBS_i − EBS_j\| predicts η_trend = η_19 − η_22 (Signal 1); CV/AR1 similarity predicts η_grammar = η_22 (Signal 2). |
+| 24 | Landauer Efficiency Ratio | Estimate bits-per-event from spike statistics and ATP cost from electrophysiology literature. Compute LER = H(X) / (E_event / E_Landauer). Test whether LER differences predict η_grammar pairs. |
 
-> **Bioenergetic framing (added Exp 21 session):** The core question driving Exp 22-24 is whether
-> the η matrix — now confirmed intrinsic and invariant to distributional shape — can be *predicted*
-> from first-principles energy budgets.  Each organism's temporal grammar may be the observable
-> signature of its energy strategy: how much does it cost to communicate, how efficiently does
-> it harvest and store energy, and what grammar can it physically afford?  The Landauer bound
-> sets the thermodynamic floor; the organism's ecology sets the ceiling.  The η matrix lives
-> between them.  See SIMULATION_FRAMEWORK_PLAN.md §11 for full treatment.
+> **Bioenergetic framing (added Exp 21 session; updated Exp 22):** Exp 22 decomposes η
+> into Signal 1 (trend co-movement, η_trend = η_19 − η_22) and Signal 2 (stationary
+> grammar, η_22).  The bioenergetic hypothesis (SIMULATION_FRAMEWORK_PLAN.md §11) maps
+> directly: energy budget *trajectory* (depleting vs expanding substrate) predicts
+> Signal 1; energy budget *strategy* (bursty vs smooth) predicts Signal 2.  The Landauer
+> bound sets the floor on signal cost; the organism's ecology sets the ceiling; the η
+> matrix lives between them.
 
 ---
 

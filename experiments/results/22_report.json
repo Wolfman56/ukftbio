@@ -1,0 +1,121 @@
+{
+  "experiment": 22,
+  "title": "Linear De-Trending Ablation",
+  "pipeline": "detrend(linear) \u2192 rank_normalise \u2192 TinyJEPA",
+  "species": [
+    "Pleurotus",
+    "Schizophyllum",
+    "Cordyceps",
+    "Enoki",
+    "Omphalotus"
+  ],
+  "eta_matrix": {
+    "Pleurotus": {
+      "Pleurotus": null,
+      "Schizophyllum": 0.38486539779936796,
+      "Cordyceps": 0.49524775966347223,
+      "Enoki": 0.3157945908251984,
+      "Omphalotus": 0.3812833629700434
+    },
+    "Schizophyllum": {
+      "Pleurotus": 0.5052098442235798,
+      "Schizophyllum": null,
+      "Cordyceps": 0.5017810617225937,
+      "Enoki": 0.26524580363141814,
+      "Omphalotus": 0.45713474813043
+    },
+    "Cordyceps": {
+      "Pleurotus": 0.5553702778591647,
+      "Schizophyllum": 0.4154592009874942,
+      "Cordyceps": null,
+      "Enoki": 0.3122172024584526,
+      "Omphalotus": 0.4818000762365007
+    },
+    "Enoki": {
+      "Pleurotus": 0.45338048582641055,
+      "Schizophyllum": 0.2482888418887381,
+      "Cordyceps": 0.3619151574062555,
+      "Enoki": null,
+      "Omphalotus": 0.3419296970533644
+    },
+    "Omphalotus": {
+      "Pleurotus": 0.5784791289220145,
+      "Schizophyllum": 0.4052128851392047,
+      "Cordyceps": 0.5362039716240825,
+      "Enoki": 0.33370382385355235,
+      "Omphalotus": null
+    }
+  },
+  "hurst_table": {
+    "Pleurotus": {
+      "H_before": 0.9289907424171441,
+      "H_after": 0.913640361615397,
+      "delta_H": -0.01535038080174711
+    },
+    "Schizophyllum": {
+      "H_before": 1.0111725652278876,
+      "H_after": 1.1386247786038444,
+      "delta_H": 0.1274522133759568
+    },
+    "Cordyceps": {
+      "H_before": 0.9579715790632243,
+      "H_after": 1.0286127997150847,
+      "delta_H": 0.0706412206518604
+    },
+    "Enoki": {
+      "H_before": 0.9170662748312864,
+      "H_after": 0.9165659919726281,
+      "delta_H": -0.0005002828586583297
+    },
+    "Omphalotus": {
+      "H_before": 1.002346304184264,
+      "H_after": 0.9321382613797758,
+      "delta_H": -0.07020804280448811
+    }
+  },
+  "key_pairs": {
+    "Omphalotus_Cordyceps": {
+      "exp19": 0.7904,
+      "exp21": 0.7401,
+      "exp22": 0.5362039716240825
+    },
+    "Schizophyllum_column_mean": {
+      "exp21": 0.199175,
+      "exp22": 0.36345658145370124,
+      "delta": 0.16428158145370125
+    }
+  },
+  "hypotheses": {
+    "H22a": {
+      "result": "\u2713",
+      "description": "Schizophyllum-as-target column mean recovers vs Exp 21",
+      "sz_col_mean_exp21": 0.199175,
+      "sz_col_mean_exp22": 0.36345658145370124,
+      "delta": 0.16428158145370125
+    },
+    "H22b": {
+      "result": "\u2717",
+      "description": "Omphalotus\u2192Cordyceps \u03b7 remains \u2265 0.70",
+      "eta_exp22": 0.5362039716240825
+    },
+    "H22c": {
+      "result": "\u2713",
+      "description": "Rank ordering rs(Exp19, Exp22) \u2265 0.70",
+      "rs": 0.7624060150375939,
+      "p": 9.311509889394973e-05
+    },
+    "H22d": {
+      "result": "\u2717",
+      "description": "Schizophyllum H drops after linear detrend",
+      "H_before": 1.0111725652278876,
+      "H_after": 1.1386247786038444,
+      "delta_H": 0.1274522133759568
+    }
+  },
+  "eta_range": {
+    "exp19": 0.5525,
+    "exp21": 0.5700999999999999,
+    "exp22": 0.33019028703327635
+  },
+  "rank_ordering_rs_vs_exp19": 0.7624060150375939
+}
