@@ -1,0 +1,284 @@
+{
+  "species_window_counts": {
+    "Pleurotus": 6507,
+    "Schizophyllum": 439,
+    "Cordyceps": 3166,
+    "Enoki": 1797,
+    "Omphalotus": 5465
+  },
+  "total_windows": 17374,
+  "top_anomalies": [
+    {
+      "cross_rank": 1,
+      "species": "Pleurotus",
+      "window_idx": 4990,
+      "borda_cross": 0.999687,
+      "s1": 1.0,
+      "s2": 12.005364,
+      "s3": 0.649264,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.998641
+    },
+    {
+      "cross_rank": 2,
+      "species": "Pleurotus",
+      "window_idx": 4989,
+      "borda_cross": 0.999592,
+      "s1": 1.0,
+      "s2": 12.005364,
+      "s3": 0.649264,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.998992
+    },
+    {
+      "cross_rank": 3,
+      "species": "Pleurotus",
+      "window_idx": 4988,
+      "borda_cross": 0.999383,
+      "s1": 1.0,
+      "s2": 12.005364,
+      "s3": 0.649264,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.998611
+    },
+    {
+      "cross_rank": 4,
+      "species": "Pleurotus",
+      "window_idx": 4987,
+      "borda_cross": 0.999344,
+      "s1": 1.0,
+      "s2": 12.005364,
+      "s3": 0.649264,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.99877
+    },
+    {
+      "cross_rank": 5,
+      "species": "Pleurotus",
+      "window_idx": 5631,
+      "borda_cross": 0.997988,
+      "s1": 0.645934,
+      "s2": 11.389125,
+      "s3": 0.642807,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.995832
+    },
+    {
+      "cross_rank": 6,
+      "species": "Pleurotus",
+      "window_idx": 5632,
+      "borda_cross": 0.997889,
+      "s1": 0.645934,
+      "s2": 9.250983,
+      "s3": 0.642807,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.995051
+    },
+    {
+      "cross_rank": 7,
+      "species": "Pleurotus",
+      "window_idx": 5633,
+      "borda_cross": 0.997589,
+      "s1": 0.645934,
+      "s2": 6.534245,
+      "s3": 0.642807,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.994848
+    },
+    {
+      "cross_rank": 8,
+      "species": "Pleurotus",
+      "window_idx": 5691,
+      "borda_cross": 0.997511,
+      "s1": 0.596642,
+      "s2": 9.419486,
+      "s3": 0.645504,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.994424
+    },
+    {
+      "cross_rank": 9,
+      "species": "Pleurotus",
+      "window_idx": 5634,
+      "borda_cross": 0.997444,
+      "s1": 0.645934,
+      "s2": 5.996762,
+      "s3": 0.642807,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.994497
+    },
+    {
+      "cross_rank": 10,
+      "species": "Pleurotus",
+      "window_idx": 1157,
+      "borda_cross": 0.997419,
+      "s1": 0.81705,
+      "s2": 7.143286,
+      "s3": 0.63873,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.994061
+    },
+    {
+      "cross_rank": 11,
+      "species": "Pleurotus",
+      "window_idx": 1155,
+      "borda_cross": 0.997315,
+      "s1": 0.81705,
+      "s2": 7.454427,
+      "s3": 0.63873,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.994405
+    },
+    {
+      "cross_rank": 12,
+      "species": "Pleurotus",
+      "window_idx": 5690,
+      "borda_cross": 0.997281,
+      "s1": 0.596642,
+      "s2": 8.291364,
+      "s3": 0.645504,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.994049
+    },
+    {
+      "cross_rank": 13,
+      "species": "Pleurotus",
+      "window_idx": 5692,
+      "borda_cross": 0.997223,
+      "s1": 0.596642,
+      "s2": 8.310166,
+      "s3": 0.645504,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.994245
+    },
+    {
+      "cross_rank": 14,
+      "species": "Pleurotus",
+      "window_idx": 1154,
+      "borda_cross": 0.997161,
+      "s1": 0.81705,
+      "s2": 6.46908,
+      "s3": 0.63873,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.994399
+    },
+    {
+      "cross_rank": 15,
+      "species": "Pleurotus",
+      "window_idx": 1156,
+      "borda_cross": 0.996765,
+      "s1": 0.81705,
+      "s2": 5.015456,
+      "s3": 0.63873,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.993132
+    },
+    {
+      "cross_rank": 16,
+      "species": "Pleurotus",
+      "window_idx": 1261,
+      "borda_cross": 0.996602,
+      "s1": 0.430623,
+      "s2": 13.115351,
+      "s3": 0.639644,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.992376
+    },
+    {
+      "cross_rank": 17,
+      "species": "Pleurotus",
+      "window_idx": 3302,
+      "borda_cross": 0.99647,
+      "s1": 0.430623,
+      "s2": 12.755706,
+      "s3": 0.639644,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.992112
+    },
+    {
+      "cross_rank": 18,
+      "species": "Pleurotus",
+      "window_idx": 1264,
+      "borda_cross": 0.996415,
+      "s1": 0.430623,
+      "s2": 12.005364,
+      "s3": 0.639644,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.99261
+    },
+    {
+      "cross_rank": 19,
+      "species": "Pleurotus",
+      "window_idx": 1262,
+      "borda_cross": 0.996325,
+      "s1": 0.430623,
+      "s2": 12.005364,
+      "s3": 0.639644,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.992628
+    },
+    {
+      "cross_rank": 20,
+      "species": "Pleurotus",
+      "window_idx": 1263,
+      "borda_cross": 0.996247,
+      "s1": 0.430623,
+      "s2": 12.005364,
+      "s3": 0.639644,
+      "rho_combined": 3.333333,
+      "intra_borda": 0.992266
+    }
+  ],
+  "species_anomaly_counts": {
+    "Pleurotus": 20
+  },
+  "intra_borda_stats": {
+    "Pleurotus": {
+      "mean": 0.5,
+      "max": 0.9989916999692592,
+      "p90": 0.8718659698739625
+    },
+    "Schizophyllum": {
+      "mean": 0.5,
+      "max": 0.9901369863013699,
+      "p90": 0.8641826484018263
+    },
+    "Cordyceps": {
+      "mean": 0.5,
+      "max": 0.9930110584518168,
+      "p90": 0.8211816745655609
+    },
+    "Enoki": {
+      "mean": 0.5,
+      "max": 0.9796881959910912,
+      "p90": 0.7913808463251671
+    },
+    "Omphalotus": {
+      "mean": 0.5,
+      "max": 0.9978330893118594,
+      "p90": 0.821904831625183
+    }
+  },
+  "s3_stats": {
+    "Pleurotus": {
+      "mean": 0.08081629872322083,
+      "max": 0.6492639780044556
+    },
+    "Schizophyllum": {
+      "mean": 0.0006401210557669401,
+      "max": 0.2810131311416626
+    },
+    "Cordyceps": {
+      "mean": 0.1993950456380844,
+      "max": 0.6451944708824158
+    },
+    "Enoki": {
+      "mean": 0.10949423164129257,
+      "max": 0.19536912441253662
+    },
+    "Omphalotus": {
+      "mean": 0.08346493542194366,
+      "max": 0.4229942560195923
+    }
+  }
+}
