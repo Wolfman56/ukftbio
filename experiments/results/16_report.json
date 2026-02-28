@@ -1,0 +1,73 @@
+{
+  "pleurotus_self_surprise": {
+    "mean": 0.6813711524009705,
+    "p90": 1.2223315000534074
+  },
+  "results": {
+    "Schizophyllum": {
+      "native_S_mean": 0.060194630175828934,
+      "transfer_S_mean": 0.21248531341552734,
+      "efficiency_eta": 0.28328842689525013,
+      "native_degenerate": false,
+      "transfer_degenerate": false
+    },
+    "Cordyceps": {
+      "native_S_mean": 0.15939290821552277,
+      "transfer_S_mean": 0.28182724118232727,
+      "efficiency_eta": 0.5655695579562658,
+      "native_degenerate": false,
+      "transfer_degenerate": false
+    },
+    "Enoki": {
+      "native_S_mean": 0.38653501868247986,
+      "transfer_S_mean": 1.1908278465270996,
+      "efficiency_eta": 0.32459353365791777,
+      "native_degenerate": false,
+      "transfer_degenerate": false
+    },
+    "Omphalotus": {
+      "native_S_mean": 0.32312166690826416,
+      "transfer_S_mean": 0.6162480711936951,
+      "efficiency_eta": 0.5243370032499504,
+      "native_degenerate": false,
+      "transfer_degenerate": false
+    }
+  },
+  "temporal_stats": {
+    "Pleurotus": {
+      "ar1": 0.768793413735415,
+      "cv": 2.0311556177203065,
+      "skew": 2.2206705370934543,
+      "kurt": 3.929981611029759,
+      "spec_ent": 0.7870472434730547
+    },
+    "Schizophyllum": {
+      "ar1": 0.9437974675388876,
+      "cv": 1.5322540053580211,
+      "skew": 2.5730203270776784,
+      "kurt": 7.775222920441566,
+      "spec_ent": 0.5058304868422123
+    },
+    "Cordyceps": {
+      "ar1": 0.9110536682542628,
+      "cv": 0.21393925428017485,
+      "skew": 0.03199721444874483,
+      "kurt": -1.1486565333925147,
+      "spec_ent": 0.34027464619865044
+    },
+    "Enoki": {
+      "ar1": 0.5946123229718587,
+      "cv": 0.2133226433764552,
+      "skew": 1.6271617276502752,
+      "kurt": 3.5310139965665934,
+      "spec_ent": 0.8455695807579588
+    },
+    "Omphalotus": {
+      "ar1": 0.6173250762725807,
+      "cv": 0.05771454555456197,
+      "skew": 3.3253831115357113,
+      "kurt": 73.70260974468223,
+      "spec_ent": 0.5690772663525274
+    }
+  }
+}

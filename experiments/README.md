@@ -198,12 +198,14 @@ wave / guidance field that precedes choice collapse.
 |-----|-------|-----------|--------|
 | 14 | Two-Tier Communication | Schizophyllum ratio=**69.6×** local-dominant; Omphalotus=**0.003×** global-dominant; all species Zipf-like local density — *Epiphany 11: the silence IS the signal* | ✅ |
 | 15 | Semantic Context + JEPA Dual-Tier | eco. stress rs=**+1.000** with ratio; Cordyceps H15a ✓ (S_global=0.282 > S_local=0.159); degenerate tiers confirm one-tier phenotypes — *Epiphany 12: strategy is ecology, not taxonomy* | ✅ |
+| 16 | Cross-Species JEPA Transfer | Pleurotus model transfers to 0/4 species (H16c ✗ everywhere); Cordyceps best η=**0.566** despite 800 Mya divergence; AR1 similarity outpredicts ecology & phylogeny — *Epiphany 13: temporal grammar is species-specific, not kingdom-wide* | ✅ |
 
 ### Running Phase 4
 
     conda activate ukftbio
     python experiments/14_local_global_tiers.py
     python experiments/15_semantic_jepa_tiers.py
+    python experiments/16_cross_species_jepa_transfer.py
 
 ### Phase 4 Key Numbers
 
@@ -223,6 +225,11 @@ wave / guidance field that precedes choice collapse.
 | Cordyceps JEPA gap S_global − S_local | **+0.123** (H15a ✓) | Exp 15 |
 | Schizophyllum S_global | **0.000** (trivially flat) | Exp 15 |
 | Omphalotus local tier | **NaN** (degenerate — no local tier) | Exp 15 |
+| Pleurotus JEPA self-surprise | mean = **0.681** | Exp 16 |
+| Cordyceps transfer efficiency η | **0.566** (best cross-species) | Exp 16 |
+| Enoki transfer S | **1.191** (1.75× Pleurotus self — worst transfer) | Exp 16 |
+| H16c species achieving η > 0.70 | **0 / 4** | Exp 16 |
+| AR1 distance → η rank correlation | Cordyceps closest AR1 (&#124;Δ&#124;=0.142) = best η | Exp 16 |
 
 ### Phase 4 Canonical Figures
 
@@ -237,6 +244,11 @@ wave / guidance field that precedes choice collapse.
 | 15 | `15_phylogenetic_strategy.png` | Evolutionary distance vs communication ratio |
 | 15 | `15_jepa_surprise_tiers.png` | JEPA surprise: local vs global (hatched = degenerate tier) |
 | 15 | `15_surprise_gap_vs_stress.png` | (S_global − S_local) vs ecological stress |
+| 16 | `16_pleurotus_training.png` | Pleurotus rho series + training curve + self-surprise histogram |
+| 16 | `16_transfer_vs_native.png` | Native vs transfer surprise bars with η annotations |
+| 16 | `16_transfer_efficiency_vs_eco.png` | η vs &#124;Δ stress&#124; and vs evolutionary distance (dual panel) |
+| 16 | `16_temporal_structure_matrix.png` | Pairwise temporal distance heatmap (AR1 + CV + skew + spec. entropy) |
+| 16 | `16_surprise_ratio_vs_stress.png` | Transfer / native ratio vs ecological stress |
 
 ### Epiphanies
 
@@ -260,13 +272,23 @@ active at scale) confirms that local tier is more temporally predictable than
 global tier — consistent with UKFT: guidance field is deterministic, choice
 collapse is not.
 
-### Next Planned (Exp 16+)
+**Epiphany 13** (Exp 16): Temporal grammar is species-specific, not kingdom-wide.
+Pleurotus ostreatus encodes a bursty, high-CV temporal attractor (CV = 2.03);
+no other species in this dataset shares it well enough for cross-species JEPA
+transfer to reach η > 0.70. The proximate driver of transfer quality is AR1
+lag-1 autocorrelation similarity — not ecology, not taxonomy. Cordyceps transfers
+better than Schizophyllum (same phylum as Pleurotus) because its dynamics have
+similar persistence structure (AR1 = 0.911 vs Pleurotus 0.769), despite being
+from an entirely different phylum diverged 800 Mya ago. Temporal grammar is a
+life-history fingerprint: each species speaks its own dialect.
+
+### Next Planned (Exp 17+)
 
 | Exp | Title | Description |
 |-----|-------|-------------|
-| 16 | Cross-Species JEPA Transfer | Train JEPA on Pleurotus, score on all 5 species — does temporal structure transfer? |
 | 17 | Cross-Species Anomaly Scan | HEP-explorer blind scan across all 5 species jointly |
 | 18 | Duroxide Orchestration | Durable-execution replay for reproducible fungal pipelines |
+| 19 | CV-Stratified JEPA Transfer | Group species by CV tier (bursty vs smooth) and test intra-group transfer — is CV the true grammar boundary? |
 
 ---
 
