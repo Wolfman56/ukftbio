@@ -1,0 +1,126 @@
+{
+  "fingerprints": {
+    "Pleurotus": {
+      "ar1": 0.76879,
+      "cv": 2.03116,
+      "hurst": 0.9974,
+      "spec_ent": 0.85771,
+      "skewness": 2.22067,
+      "kurtosis": 3.92998
+    },
+    "Schizophyllum": {
+      "ar1": 0.9438,
+      "cv": 1.53225,
+      "hurst": 1.21634,
+      "spec_ent": 0.57723,
+      "skewness": 2.57302,
+      "kurtosis": 7.77522
+    },
+    "Cordyceps": {
+      "ar1": 0.91105,
+      "cv": 0.21394,
+      "hurst": 0.95941,
+      "spec_ent": 0.86984,
+      "skewness": 0.032,
+      "kurtosis": -1.14866
+    },
+    "Enoki": {
+      "ar1": 0.59461,
+      "cv": 0.21332,
+      "hurst": 0.84342,
+      "spec_ent": 0.91476,
+      "skewness": 1.62716,
+      "kurtosis": 3.53101
+    },
+    "Omphalotus": {
+      "ar1": 0.61733,
+      "cv": 0.05771,
+      "hurst": 0.87845,
+      "spec_ent": 0.98691,
+      "skewness": 3.32538,
+      "kurtosis": 73.70261
+    }
+  },
+  "feature_spearman_vs_eta": {
+    "ar1": {
+      "rs": -0.16906,
+      "p": 0.47614
+    },
+    "cv": {
+      "rs": 0.18113,
+      "p": 0.44472
+    },
+    "hurst": {
+      "rs": -0.4317,
+      "p": 0.05735
+    },
+    "spec_ent": {
+      "rs": -0.23547,
+      "p": 0.3176
+    },
+    "skewness": {
+      "rs": 0.36529,
+      "p": 0.11326
+    },
+    "kurtosis": {
+      "rs": 0.48,
+      "p": 0.0322
+    }
+  },
+  "native_s_spearman_vs_eta": {
+    "rs": 0.3311,
+    "p": 0.15388
+  },
+  "composite_spearman_vs_eta": {
+    "rs": 0.18717,
+    "p": 0.42942
+  },
+  "hypotheses": {
+    "H20a": {
+      "result": "not_confirmed",
+      "best_predictor": "hurst",
+      "hurst_rs": -0.4317,
+      "hurst_p": 0.0573
+    },
+    "H20b": {
+      "result": "not_confirmed",
+      "top_smooth_pairs": [
+        {
+          "src": "Enoki",
+          "tgt": "Omphalotus",
+          "delta_hurst": 0.03503
+        },
+        {
+          "src": "Omphalotus",
+          "tgt": "Enoki",
+          "delta_hurst": 0.03503
+        },
+        {
+          "src": "Cordyceps",
+          "tgt": "Omphalotus",
+          "delta_hurst": 0.08095
+        },
+        {
+          "src": "Omphalotus",
+          "tgt": "Cordyceps",
+          "delta_hurst": 0.08095
+        },
+        {
+          "src": "Cordyceps",
+          "tgt": "Enoki",
+          "delta_hurst": 0.11599
+        }
+      ]
+    },
+    "H20c": {
+      "result": "not_confirmed",
+      "rs_native_s": 0.3311,
+      "p": 0.1539
+    },
+    "H20d": {
+      "result": "not_confirmed",
+      "composite_rs": 0.1872,
+      "composite_p": 0.4294
+    }
+  }
+}
