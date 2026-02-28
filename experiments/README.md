@@ -120,18 +120,79 @@ the σ metric (rewarding low variance) will be addressed in Phase 3.
 
 ---
 
-## Phase 3 — JEPA + Swarm (Exp 11–15)  🔄 In Progress
+## Phase 3 — Real Data + JEPA + Multi-Species (Exp 11–13) ✅ Complete
 
-Next phase targets real data (Adamatzky Zenodo fungal spike trains) and multi-agent
-swarm dynamics.
+Moved from synthetic to real electrophysiology (Adamatzky Zenodo), trained a
+JEPA temporal predictor, and confirmed universal manifold geometry across 5 fungal
+species. Full writeup: `docs/PHASES_10_13_REPORT.md`.
+
+| Exp | Title | Key Result | Status |
+|-----|-------|-----------|--------|
+| 11 | Real Fungal Data Ingest | time-dilation r=**+0.392** (p=1.3×10⁻⁵⁰); geodesic ratio=**0.183**; recall@100=1.00 | ✅ |
+| 12 | JEPA Temporal Predictor | rs(S,ρ)=**+0.8785**; cos_acc=**0.9519** — *Epiphany 9: ρ–S duality* | ✅ |
+| 13 | Multi-Species Varietal Comparison | geodesic ratio **0.319–0.345** across 5 species; silence varies **3,300×** — *Epiphany 10: universal geometry* | ✅ |
+
+### Running Phase 3
+
+    conda activate ukftbio
+    python experiments/11_real_fungal_ingest.py
+    python experiments/12_jepa_real_data.py
+    python experiments/13_varietal_comparison.py               # all species
+    python experiments/13_varietal_comparison.py --dry-run     # smoke test
+
+### Phase 3 Key Numbers
+
+| Metric | Value | Experiment |
+|--------|-------|-----------|
+| Spike count (Pleurotus, 217 h) | 2,534 | Exp 11 |
+| Burst fraction | 85.7% | Exp 11 |
+| Active window fraction | 29.0% | Exp 11 |
+| Time-dilation Spearman r | **+0.392**, p=1.3×10⁻⁵⁰ | Exp 11 |
+| Geodesic/Euclidean ratio median | **0.183** (5.5× compression) | Exp 11 |
+| Recall@50 / Recall@100 | 0.80 / **1.00** | Exp 11 |
+| JEPA rs(surprise S, ρ) | **+0.8785** | Exp 12 |
+| JEPA cosine accuracy | **0.9519** | Exp 12 |
+| JEPA rs(S, Borda) | +0.7880 | Exp 12 |
+| 5-species geodesic ratio range | **0.319–0.345** (band=0.026) | Exp 13 |
+| Silence range across species | **0.03%–98.5%** (3,300× variation) | Exp 13 |
+| Zipf rs (all species) | < −0.982 | Exp 13 |
+| Centroid cluster structure | TWO_CLUSTER (sparse-episodic vs continuous) | Exp 13 |
+
+### Phase 3 Canonical Figures
+
+| Exp | Figure | What it shows |
+|-----|--------|--------------|
+| 11 | `exp11_pipeline_comparison.png` | Exp 10 synthetic vs Exp 11 real side-by-side |
+| 11 | `exp11_rho_distribution.png` | ρ histogram + Zipf rank-log (Pleurotus) |
+| 11 | `exp11_time_dilation.png` | log-log scatter ρ vs ISI — UKFT dt=C/ρ fit |
+| 11 | `exp11_geodesic_ratio.png` | Geodesic/Euclidean distribution (median=0.183) |
+| 11 | `exp11_borda_topk.png` | Top-10 Borda candidates on recording timeline |
+| 12 | `fig_12a_jepa_surprise_rho.png` | JEPA S vs ρ scatter + all rs bar chart |
+| 13 | `fig_13a_geodesic_universal.png` | 5-species geodesic ratio — universality band |
+| 13 | `fig_13b_silence_spectrum.png` | Silence fraction + heavy-tail ratio per species |
+| 13 | `fig_13c_centroid_heatmap.png` | 5×5 centroid cosine distance — TWO_CLUSTER |
+
+### Epiphanies
+
+**Epiphany 9** (Exp 12): ρ (retrospective entropy production) and JEPA surprise S
+(prospective entropy production) are correlated at rs=+0.88. This is the signature
+of irreversible choice collapse: the same trajectory that generated high past density
+is unpredictable next. Silent attractor: S≈0.0004; burst events: S≈1.33.
+
+**Epiphany 10** (Exp 13): UKFT manifold geometry (geodesic ratio ≈ 0.32–0.35) is
+conserved across 5 evolutionary lineages spanning 0.03%–98.5% silence. A single
+Pleurotus-trained projection head transfers without re-training. Architecture =
+universal; activation density = biological.
+
+---
+
+## Phase 4 — Next Steps (Exp 14+)  📋 Planned
 
 | Exp | Title | Description |
 |-----|-------|-------------|
-| 11 | Real Fungal Data Ingest ✅ | Adamatzky Star_Lab03 (217h, 8ch): 2,534 spikes 85.8% burst, 6,507 windows 29% active, ρ_median=1.111, geodesic/Euc=0.183, time-dilation r=+0.392, recall@50=0.80 PASS |
-| 12 | JEPA Predictor (real data) | Full JEPA epistemic sampling on real spike trains |
-| 13 | Swarm Choice Coupling | Multi-channel collective choice branching |
-| 14 | Duroxide Orchestration | Durable-execution replay of fungal experiment |
-| 15 | Phase 3 Full Pipeline | JEPA + swarm + real data blind scan |
+| 14 | Cross-Species JEPA Transfer | Train JEPA on Pleurotus, score on all 5 species — does temporal structure transfer? |
+| 15 | Cross-Species Anomaly Scan | HEP-explorer blind scan across all 5 species jointly — find inter-species geometric analogues |
+| 16 | Duroxide Orchestration | Durable-execution replay for reproducible fungal pipelines |
 
 ---
 
